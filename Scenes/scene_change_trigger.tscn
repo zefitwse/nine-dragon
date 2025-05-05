@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cjahkrsdu23er"]
+
+[ext_resource type="Script" uid="uid://co1ty8fwxbaij" path="res://Scripts/scene_change_trigger.gd" id="1_nttiu"]
+
+[node name="scene_change_trigger" type="Area2D"]
+script = ExtResource("1_nttiu")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
