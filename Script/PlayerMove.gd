@@ -42,7 +42,6 @@ func update_animation(input_vector: Vector2):
 func _physics_process(_delta: float) -> void:
 	var input_vector = Input.get_vector("left", "right", "up", "down")
 	velocity = input_vector * move_speed
-		# 更新动画状态
+	# 更新动画状态
 	update_animation(input_vector)
-	
 	move_and_slide()
