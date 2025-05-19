@@ -1,6 +1,6 @@
 [gd_scene load_steps=35 format=3 uid="uid://b2ryfguonl6qy"]
 
-[ext_resource type="Script" uid="uid://dfjkcrnu2urj0" path="res://Script/PlayerMove.gd" id="1_swk73"]
+[ext_resource type="Script" uid="uid://dfjkcrnu2urj0" path="res://Script/player_move.gd" id="1_swk73"]
 [ext_resource type="Texture2D" uid="uid://cr2kghxnbiyqy" path="res://Sprites/Adam/Adam_run_16x16.png" id="2_rdqsc"]
 [ext_resource type="Texture2D" uid="uid://ddywrwau4d5ei" path="res://Sprites/Adam/Adam_idle_16x16.png" id="2_s86xt"]
 [ext_resource type="Script" uid="uid://djg1u70lb25r7" path="res://Script/camera_2d.gd" id="4_s86xt"]

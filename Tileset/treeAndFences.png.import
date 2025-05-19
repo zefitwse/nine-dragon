@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cqm5mbo03vn3s"
-path="res://.godot/imported/GroundFloor.png-4f835b9ff9c6a8bd27556cec97def7d5.ctex"
+uid="uid://dd2xgy1jqnbhq"
+path="res://.godot/imported/treeAndFences.png-35ccc14e78a83c18ec54593df877dfae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/GroundFloor.png"
-dest_files=["res://.godot/imported/GroundFloor.png-4f835b9ff9c6a8bd27556cec97def7d5.ctex"]
+source_file="res://Tileset/treeAndFences.png"
+dest_files=["res://.godot/imported/treeAndFences.png-35ccc14e78a83c18ec54593df877dfae.ctex"]
 
 [params]
 

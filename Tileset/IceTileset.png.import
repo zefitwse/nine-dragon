@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cqm5mbo03vn3s"
-path="res://.godot/imported/GroundFloor.png-4f835b9ff9c6a8bd27556cec97def7d5.ctex"
+uid="uid://bm6r08cbgsiyq"
+path="res://.godot/imported/IceTileset.png-d5aaeed7a593040629f691ee224d5f80.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/GroundFloor.png"
-dest_files=["res://.godot/imported/GroundFloor.png-4f835b9ff9c6a8bd27556cec97def7d5.ctex"]
+source_file="res://Tileset/IceTileset.png"
+dest_files=["res://.godot/imported/IceTileset.png-d5aaeed7a593040629f691ee224d5f80.ctex"]
 
 [params]
 

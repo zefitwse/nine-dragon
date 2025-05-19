@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cqm5mbo03vn3s"
-path="res://.godot/imported/GroundFloor.png-4f835b9ff9c6a8bd27556cec97def7d5.ctex"
+uid="uid://cd5cq7bbrk25v"
+path="res://.godot/imported/SnowGround.png-2e7357a2bed3634e6804c0597223eda3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/GroundFloor.png"
-dest_files=["res://.godot/imported/GroundFloor.png-4f835b9ff9c6a8bd27556cec97def7d5.ctex"]
+source_file="res://Assets/SnowGround.png"
+dest_files=["res://.godot/imported/SnowGround.png-2e7357a2bed3634e6804c0597223eda3.ctex"]
 
 [params]
 
