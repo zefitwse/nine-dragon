@@ -1,7 +1,9 @@
-[gd_scene load_steps=7 format=4 uid="uid://ba0a7hekwy10j"]
+[gd_scene load_steps=10 format=4 uid="uid://ba0a7hekwy10j"]
 
 [ext_resource type="PackedScene" uid="uid://b2ryfguonl6qy" path="res://Scenes/PlayerRole.tscn" id="1_8gjd5"]
 [ext_resource type="Texture2D" uid="uid://cqm5mbo03vn3s" path="res://Assets/GroundFloor.png" id="3_2nld2"]
+[ext_resource type="PackedScene" uid="uid://dcfti7vb4fljt" path="res://Scenes/characters/amelia.tscn" id="3_lylen"]
+[ext_resource type="PackedScene" uid="uid://bi2u6aa6vs5pl" path="res://Scenes/dialogue_trigger.tscn" id="4_h7ipb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_144ut"]
 texture = ExtResource("3_2nld2")
@@ -4111,6 +4113,9 @@ size = Vector2(303.672, 79.3125)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qqbtl"]
 size = Vector2(319.25, 146.063)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_khnh5"]
+size = Vector2(19, 24)
+
 [node name="InnerScene" type="Node2D"]
 position = Vector2(-5, 0)
 
@@ -4152,3 +4157,13 @@ position = Vector2(1220, 1093)
 scale = Vector2(0.565, 0.565)
 skew = -0.015708
 shape = SubResource("RectangleShape2D_qqbtl")
+
+[node name="npc_amelia" parent="." instance=ExtResource("3_lylen")]
+position = Vector2(239, 254)
+
+[node name="DialogueTrigger" parent="npc_amelia" instance=ExtResource("4_h7ipb")]
+json_src_path = "res://Resources/amellia/json_dialogue_script/dialog_test_cn.json"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="npc_amelia/DialogueTrigger"]
+position = Vector2(-0.5, -2)
+shape = SubResource("RectangleShape2D_khnh5")

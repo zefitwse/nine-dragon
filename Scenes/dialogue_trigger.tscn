@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://bi2u6aa6vs5pl"]
+
+[ext_resource type="Script" uid="uid://dfwjdu0x32gs1" path="res://Script/dialogue_trigger.gd" id="1_e2jh5"]
+
+[node name="DialogueTrigger" type="Area2D"]
+collision_layer = 1033
+collision_mask = 1033
+script = ExtResource("1_e2jh5")
+json_src_path = "res://resources/amellia/json_dialogue_script/dialog_test_cn.json"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

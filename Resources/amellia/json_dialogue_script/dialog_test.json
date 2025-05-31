@@ -1,0 +1,313 @@
+[
+  {
+	"msg_id": 1,
+	"name": "Adam",
+	"msg_content": "Hey Amelia, have you found any clues about the missing artifact?",
+	"icon_path": "res://Assets/portraits/character1.png",
+	"options": [
+	  {
+		"option_text": "Ask about alternative search methods",
+		"jump_to_msg_id": 2
+	  },
+	  {
+		"option_text": "Suggest checking with other departments",
+		"jump_to_msg_id": 2
+	  }
+	]
+  },
+  {
+	"msg_id": 2,
+	"name": "Amelia",
+	"msg_content": "Nothing concrete yet. The museum's security footage was corrupted.",
+	"icon_path": "res://Assets/portraits/character2.png",
+	"options": [
+	  {
+		"option_text": "Suggest checking other surveillance systems",
+		"jump_to_msg_id": 3
+	  },
+	  {
+		"option_text": "Propose hiring a data recovery expert",
+		"jump_to_msg_id": 4
+	  }
+	]
+  },
+  {
+	"msg_id": 3,
+	"name": "Adam",
+	"msg_content": "That's suspicious. Do you think it was an inside job?",
+	"icon_path": "res://Assets/portraits/character1.png",
+	"options": [
+	  {
+		"option_text": "Propose interviewing staff members",
+		"jump_to_msg_id": 5
+	  },
+	  {
+		"option_text": "Suggest checking security clearances",
+		"jump_to_msg_id": 6
+	  }
+	]
+  },
+  {
+	"msg_id": 4,
+	"name": "Amelia",
+	"msg_content": "Possibly. I'm checking the staff schedules for that night.",
+	"icon_path": "res://Assets/portraits/character2.png",
+	"options": [
+	  {
+		"option_text": "Offer to help with schedule review",
+		"jump_to_msg_id": 7
+	  },
+	  {
+		"option_text": "Ask if there were any unusual shifts",
+		"jump_to_msg_id": 8
+	  }
+	]
+  },
+  {
+	"msg_id": 5,
+	"name": "Adam",
+	"msg_content": "Good idea. I'll talk to the security guards who were on duty.",
+	"icon_path": "res://Assets/portraits/character1.png",
+	"options": [
+	  {
+		"option_text": "Ask if they've noticed anything unusual",
+		"jump_to_msg_id": 9
+	  },
+	  {
+		"option_text": "Suggest checking their communication logs",
+		"jump_to_msg_id": 10
+	  }
+	]
+  },
+  {
+	"msg_id": 6,
+	"name": "Amelia",
+	"msg_content": "Wait, I found something interesting. The artifact was moved three times last month.",
+	"icon_path": "res://Assets/portraits/character2.png",
+	"options": [
+	  {
+		"option_text": "Investigate the authorization for transfers",
+		"jump_to_msg_id": 11
+	  },
+	  {
+		"option_text": "Check if there were any damage reports during transfers",
+		"jump_to_msg_id": 12
+	  }
+	]
+  },
+  {
+	"msg_id": 7,
+	"name": "Adam",
+	"msg_content": "That's unusual. Standard protocol is to minimize handling of ancient pieces.",
+	"icon_path": "res://Assets/portraits/character1.png",
+	"options": [
+	  {
+		"option_text": "Check if there were any official reports",
+		"jump_to_msg_id": 13
+	  },
+	  {
+		"option_text": "Suggest interviewing the handlers",
+		"jump_to_msg_id": 14
+	  }
+	]
+  },
+  {
+	"msg_id": 8,
+	"name": "Amelia",
+	"msg_content": "Exactly. And guess who authorized each transfer? Dr. Lynwood.",
+	"icon_path": "res://Assets/portraits/character2.png",
+	"options": [
+	  {
+		"option_text": "Look into Dr. Lynwood's motives",
+		"jump_to_msg_id": 15
+	  },
+	  {
+		"option_text": "Check his travel records around those times",
+		"jump_to_msg_id": 16
+	  }
+	]
+  },
+  {
+	"msg_id": 9,
+	"name": "Adam",
+	"msg_content": "The museum director? Why would he risk his reputation?",
+	"icon_path": "res://Assets/portraits/character1.png",
+	"options": [
+	  {
+		"option_text": "Examine his recent activities",
+		"jump_to_msg_id": 17
+	  },
+	  {
+		"option_text": "Look into his financial backers",
+		"jump_to_msg_id": 18
+	  }
+	]
+  },
+  {
+	"msg_id": 10,
+	"name": "Amelia",
+	"msg_content": "I don't know yet, but his financial records show some recent large purchases.",
+	"icon_path": "res://Assets/portraits/character2.png",
+	"options": [
+	  {
+		"option_text": "Follow the money trail",
+		"jump_to_msg_id": 19
+	  },
+	  {
+		"option_text": "Check if the purchases are related to the museum",
+		"jump_to_msg_id": 20
+	  }
+	]
+  },
+  {
+	"msg_id": 11,
+	"name": "Adam",
+	"msg_content": "We should be careful about accusing him without solid evidence.",
+	"icon_path": "res://Assets/portraits/character1.png",
+	"options": [
+	  {
+		"option_text": "Gather more evidence before acting",
+		"jump_to_msg_id": 11
+	  },
+	  {
+		"option_text": "Set up surveillance on Dr. Lynwood",
+		"jump_to_msg_id": 12
+	  }
+	]
+  },
+  {
+	"msg_id": 12,
+	"name": "Amelia",
+	"msg_content": "Of course. I'm just connecting dots, not drawing conclusions yet.",
+	"icon_path": "res://Assets/portraits/character2.png",
+	"options": [
+	  {
+		"option_text": "Share other leads we've found",
+		"jump_to_msg_id": 13
+	  },
+	  {
+		"option_text": "Brainstorm other possible suspects",
+		"jump_to_msg_id": 14
+	  }
+	]
+  },
+  {
+	"msg_id": 13,
+	"name": "Adam",
+	"msg_content": "I found something too. The alarm system was disabled for 'maintenance' that night.",
+	"icon_path": "res://Assets/portraits/character1.png",
+	"options": [
+	  {
+		"option_text": "Find out who ordered the maintenance",
+		"jump_to_msg_id": 15
+	  },
+	  {
+		"option_text": "Check if the maintenance was legitimate",
+		"jump_to_msg_id": 16
+	  }
+	]
+  },
+  {
+	"msg_id": 14,
+	"name": "Amelia",
+	"msg_content": "Who authorized the maintenance?",
+	"icon_path": "res://Assets/portraits/character2.png",
+	"options": [
+	  {
+		"option_text": "Check the maintenance logs",
+		"jump_to_msg_id": 17
+	  },
+	  {
+		"option_text": "Interview the maintenance supervisor",
+		"jump_to_msg_id": 18
+	  }
+	]
+  },
+  {
+	"msg_id": 15,
+	"name": "Adam",
+	"msg_content": "That's the thing - there's no record of who approved it.",
+	"icon_path": "res://Assets/portraits/character1.png",
+	"options": [
+	  {
+		"option_text": "Interview the maintenance crew",
+		"jump_to_msg_id": 19
+	  },
+	  {
+		"option_text": "Check if there were any unauthorized access attempts",
+		"jump_to_msg_id": 20
+	  }
+	]
+  },
+  {
+	"msg_id": 16,
+	"name": "Amelia",
+	"msg_content": "Wait, look at this email I just found. Dr. Lynwood received a message from an anonymous account.",
+	"icon_path": "res://Assets/portraits/character2.png",
+	"options": [
+	  {
+		"option_text": "Analyze the email for clues",
+		"jump_to_msg_id": 17
+	  },
+	  {
+		"option_text": "Try to trace the anonymous account",
+		"jump_to_msg_id": 18
+	  }
+	]
+  },
+  {
+	"msg_id": 17,
+	"name": "Adam",
+	"msg_content": "What does it say?",
+	"icon_path": "res://Assets/portraits/character1.png",
+	"options": [
+	  {
+		"option_text": "Read the email aloud",
+		"jump_to_msg_id": 19
+	  },
+	  {
+		"option_text": "Check the email headers for more info",
+		"jump_to_msg_id": 20
+	  }
+	]
+  },
+  {
+	"msg_id": 18,
+	"name": "Amelia",
+	"msg_content": "'The final payment will be made after delivery. Remember our agreement.'",
+	"icon_path": "res://Assets/portraits/character2.png",
+	"options": [
+	  {
+		"option_text": "Use this as evidence to act",
+		"jump_to_msg_id": 19
+	  },
+	  {
+		"option_text": "Look for more emails from the same sender",
+		"jump_to_msg_id": 20
+	  }
+	]
+  },
+  {
+	"msg_id": 19,
+	"name": "Adam",
+	"msg_content": "That's it! We need to alert the authorities immediately.",
+	"icon_path": "res://Assets/portraits/character1.png",
+	"options": [
+	  {
+		"option_text": "Call the detective now",
+		"jump_to_msg_id": 20
+	  },
+	  {
+		"option_text": "Prepare a detailed report first",
+		"jump_to_msg_id": 20
+	  }
+	]
+  },
+  {
+	"msg_id": 20,
+	"name": "Amelia",
+	"msg_content": "Already on it. I've sent the evidence to Detective Garcia. They're on their way.",
+	"icon_path": "res://Assets/portraits/character2.png",
+	"options": []
+  }
+]

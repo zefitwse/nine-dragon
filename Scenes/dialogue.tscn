@@ -1,0 +1,89 @@
+[gd_scene load_steps=4 format=3 uid="uid://ddgg6w7fbrg4l"]
+
+[ext_resource type="Script" uid="uid://bxlkxn04ddqem" path="res://Script/dialogue_controller.gd" id="1_dgfud"]
+[ext_resource type="Texture2D" uid="uid://dttw6kv8ouejm" path="res://icon.svg" id="2_p21q5"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_pjl42"]
+font_size = 23
+font_color = Color(0.66418, 0.95396, 0.913594, 1)
+
+[node name="Dialogue" type="CanvasLayer"]
+script = ExtResource("1_dgfud")
+json_src_path = "res://Resources/amellia/json_dialogue_script/dialog_test_cn.json"
+
+[node name="dialogue_panel" type="Panel" parent="."]
+unique_name_in_owner = true
+anchors_preset = -1
+anchor_left = 0.506
+anchor_top = 0.792
+anchor_right = 0.506
+anchor_bottom = 0.792
+offset_left = -469.912
+offset_top = -91.2161
+offset_right = 470.088
+offset_bottom = 91.7839
+size_flags_vertical = 3
+
+[node name="dialogue_msg_info" type="VBoxContainer" parent="dialogue_panel"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 206.0
+offset_top = 6.0
+offset_right = 923.0
+offset_bottom = 177.0
+
+[node name="name" type="Label" parent="dialogue_panel/dialogue_msg_info"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "name"
+label_settings = SubResource("LabelSettings_pjl42")
+
+[node name="text_content" type="Label" parent="dialogue_panel/dialogue_msg_info"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.2
+text = "Content"
+autowrap_mode = 3
+
+[node name="choosing_box" type="VBoxContainer" parent="dialogue_panel/dialogue_msg_info"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 3.02
+
+[node name="option1" type="Button" parent="dialogue_panel/dialogue_msg_info/choosing_box"]
+layout_mode = 2
+text = "??"
+alignment = 0
+
+[node name="option2" type="Button" parent="dialogue_panel/dialogue_msg_info/choosing_box"]
+layout_mode = 2
+text = "??"
+alignment = 0
+
+[node name="character_icon" type="TextureRect" parent="dialogue_panel"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.114
+anchor_top = 0.53
+anchor_right = 0.114
+anchor_bottom = 0.53
+offset_left = -64.16
+offset_top = -63.9899
+offset_right = 60.84
+offset_bottom = 49.0101
+texture = ExtResource("2_p21q5")
+expand_mode = 3
+
+[node name="next_btn" type="Button" parent="dialogue_panel"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = 851.0
+offset_top = 133.0
+offset_right = 893.0
+offset_bottom = 171.0

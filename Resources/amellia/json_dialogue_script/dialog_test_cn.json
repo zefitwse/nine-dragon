@@ -1,0 +1,308 @@
+[
+  {
+	"msg_id": 1,
+	"name": "亚当",
+	"msg_content": "嘿，阿米莉亚，你找到关于失踪文物的任何线索了吗？",
+	"icon_path": "res://Assets/portraits/character1.png",
+	"options": [
+	  {
+		"option_text": "询问其他搜索方法",
+		"jump_to_msg_id": 2
+	  },
+	  {
+		"option_text": "建议联系其他部门核实",
+		"jump_to_msg_id": 2
+	  }
+	]
+  },
+  {
+	"msg_id": 2,
+	"name": "阿米莉亚",
+	"msg_content": "目前还没有确凿的线索。博物馆的监控录像被损坏了。",
+	"icon_path": "res://Assets/portraits/character2.png",
+	"options": [
+	  {
+		"option_text": "建议检查其他监控系统",
+		"jump_to_msg_id": 3
+	  },
+	  {
+		"option_text": "提议聘请数据恢复专家",
+		"jump_to_msg_id": 4
+	  }
+	]
+  },
+  {
+	"msg_id": 3,
+	"name": "亚当",
+	"msg_content": "这很可疑。你觉得这是内部人员干的吗？",
+	"icon_path": "res://Assets/portraits/character1.png",
+	"options": [
+	  {
+		"option_text": "提议采访工作人员",
+		"jump_to_msg_id": 5
+	  },
+	  {
+		"option_text": "建议检查安全许可",
+		"jump_to_msg_id": 6
+	  }
+	]
+  },
+  {
+	"msg_id": 4,
+	"name": "阿米莉亚",
+	"msg_content": "有可能。我正在核查当晚的员工排班表。",
+	"icon_path": "res://Assets/portraits/character2.png",
+	"options": [
+	  {
+		"option_text": "主动提出帮助审查排班表",
+		"jump_to_msg_id": 7
+	  },
+	  {
+		"option_text": "询问是否有异常轮班情况",
+		"jump_to_msg_id": 8
+	  }
+	]
+  },
+  {
+	"msg_id": 5,
+	"name": "亚当",
+	"msg_content": "好主意。我会去和当晚值班的保安谈谈。",
+	"icon_path": "res://Assets/portraits/character1.png",
+	"options": [
+	  {
+		"option_text": "询问他们是否注意到任何异常",
+		"jump_to_msg_id": 9
+	  },
+	  {
+		"option_text": "建议检查他们的通讯记录",
+		"jump_to_msg_id": 10
+	  }
+	]
+  },
+  {
+	"msg_id": 6,
+	"name": "阿米莉亚",
+	"msg_content": "等等，我发现了一些有趣的事。这件文物上个月被移动了三次。",
+	"icon_path": "res://Assets/portraits/character2.png",
+	"options": [
+	  {
+		"option_text": "调查转移授权记录",
+		"jump_to_msg_id": 11
+	  },
+	  {
+		"option_text": "核查转移过程中是否有损坏报告",
+		"jump_to_msg_id": 12
+	  }
+	]
+  },
+  {
+	"msg_id": 7,
+	"name": "亚当",
+	"msg_content": "这很不寻常。标准流程是尽量减少对古代文物的搬运。",
+	"icon_path": "res://Assets/portraits/character1.png",
+	"options": [
+	  {
+		"jump_to_msg_id": 13
+	  },
+	]
+  },
+  {
+	"msg_id": 8,
+	"name": "阿米莉亚",
+	"msg_content": "没错。你猜是谁批准每次转移的？林伍德博士。",
+	"icon_path": "res://Assets/portraits/character2.png",
+	"options": [
+	  {
+		"option_text": "调查林伍德博士的动机",
+		"jump_to_msg_id": 15
+	  },
+	  {
+		"option_text": "核查他在那些时间段的旅行记录",
+		"jump_to_msg_id": 16
+	  }
+	]
+  },
+  {
+	"msg_id": 9,
+	"name": "亚当",
+	"msg_content": "博物馆馆长？他为什么要冒损坏自己声誉的风险？",
+	"icon_path": "res://Assets/portraits/character1.png",
+	"options": [
+	  {
+		"option_text": "调查他近期的活动",
+		"jump_to_msg_id": 17
+	  },
+	  {
+		"option_text": "调查他的资金支持者",
+		"jump_to_msg_id": 18
+	  }
+	]
+  },
+  {
+	"msg_id": 10,
+	"name": "阿米莉亚",
+	"msg_content": "我还不知道，但他的财务记录显示最近有几笔大额消费。",
+	"icon_path": "res://Assets/portraits/character2.png",
+	"options": [
+	  {
+		"option_text": "追踪资金流向",
+		"jump_to_msg_id": 19
+	  },
+	  {
+		"option_text": "核查这些消费是否与博物馆相关",
+		"jump_to_msg_id": 20
+	  }
+	]
+  },
+  {
+	"msg_id": 11,
+	"name": "亚当",
+	"msg_content": "我们在没有确凿证据前，指控他要谨慎。",
+	"icon_path": "res://Assets/portraits/character1.png",
+	"options": [
+	  {
+		"option_text": "收集更多证据后再行动",
+		"jump_to_msg_id": 11
+	  },
+	  {
+		"option_text": "对林伍德博士设置监控",
+		"jump_to_msg_id": 12
+	  }
+	]
+  },
+  {
+	"msg_id": 12,
+	"name": "阿米莉亚",
+	"msg_content": "当然。我只是在梳理线索，还没下结论。",
+	"icon_path": "res://Assets/portraits/character2.png",
+	"options": [
+	  {
+		"option_text": "分享我们找到的其他线索",
+		"jump_to_msg_id": 13
+	  },
+	  {
+		"option_text": "集思广益其他可能的嫌疑人",
+		"jump_to_msg_id": 14
+	  }
+	]
+  },
+  {
+	"msg_id": 13,
+	"name": "亚当",
+	"msg_content": "我也发现了一些情况。警报系统在当晚因‘维护’被关闭了。",
+	"icon_path": "res://Assets/portraits/character1.png",
+	"options": [
+	  {
+		"option_text": "查明是谁下令进行维护的",
+		"jump_to_msg_id": 15
+	  },
+	  {
+		"option_text": "核查维护是否合法",
+		"jump_to_msg_id": 16
+	  }
+	]
+  },
+  {
+	"msg_id": 14,
+	"name": "阿米莉亚",
+	"msg_content": "谁批准的维护？",
+	"icon_path": "res://Assets/portraits/character2.png",
+	"options": [
+	  {
+		"option_text": "检查维护日志",
+		"jump_to_msg_id": 17
+	  },
+	  {
+		"option_text": "采访维护主管",
+		"jump_to_msg_id": 18
+	  }
+	]
+  },
+  {
+	"msg_id": 15,
+	"name": "亚当",
+	"msg_content": "问题就在这里——没有记录显示是谁批准的。",
+	"icon_path": "res://Assets/portraits/character1.png",
+	"options": [
+	  {
+		"option_text": "采访维护人员",
+		"jump_to_msg_id": 19
+	  },
+	  {
+		"option_text": "检查是否有未经授权的访问尝试",
+		"jump_to_msg_id": 20
+	  }
+	]
+  },
+  {
+	"msg_id": 16,
+	"name": "阿米莉亚",
+	"msg_content": "等等，看看我刚找到的这封邮件。林伍德博士收到了一封匿名账户的消息。",
+	"icon_path": "res://Assets/portraits/character2.png",
+	"options": [
+	  {
+		"option_text": "分析邮件寻找线索",
+		"jump_to_msg_id": 17
+	  },
+	  {
+		"option_text": "尝试追踪匿名账户",
+		"jump_to_msg_id": 18
+	  }
+	]
+  },
+  {
+	"msg_id": 17,
+	"name": "亚当",
+	"msg_content": "上面写了什么？",
+	"icon_path": "res://Assets/portraits/character1.png",
+	"options": [
+	  {
+		"option_text": "大声朗读邮件内容",
+		"jump_to_msg_id": 19
+	  },
+	  {
+		"option_text": "检查邮件头获取更多信息",
+		"jump_to_msg_id": 20
+	  }
+	]
+  },
+  {
+	"msg_id": 18,
+	"name": "阿米莉亚",
+	"msg_content": "'交付后将支付最后一笔款项。记住我们的约定。'",
+	"icon_path": "res://Assets/portraits/character2.png",
+	"options": [
+	  {
+		"option_text": "用这个作为证据采取行动",
+		"jump_to_msg_id": 19
+	  },
+	  {
+		"option_text": "寻找来自同一发件人的更多邮件",
+		"jump_to_msg_id": 20
+	  }
+	]
+  },
+  {
+	"msg_id": 19,
+	"name": "亚当",
+	"msg_content": "就是这个！我们需要立即通知当局。",
+	"icon_path": "res://Assets/portraits/character1.png",
+	"options": [
+	  {
+		"option_text": "现在就给侦探打电话",
+		"jump_to_msg_id": 20
+	  },
+	  {
+		"option_text": "先准备一份详细报告",
+		"jump_to_msg_id": 20
+	  }
+	]
+  },
+  {
+	"msg_id": 20,
+	"name": "阿米莉亚",
+	"msg_content": "已经在做了。我已经把证据发给加西亚侦探了。他们正在赶来的路上。",
+	"icon_path": "res://Assets/portraits/character2.png",
+	"options": []
+  }
+]
