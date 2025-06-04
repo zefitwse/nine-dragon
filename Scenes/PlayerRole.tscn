@@ -265,7 +265,7 @@ animation = &"move_up"
 position = Vector2(2, 0)
 shape = SubResource("CircleShape2D_jm3w1")
 
-[node name="Camera2D" type="Camera2D" parent="Player"]
+[node name="Camera2D" type="Camera2D" parent="Player" groups=["main_camera"]]
 position = Vector2(2, 1)
 zoom = Vector2(3, 3)
 script = ExtResource("4_s86xt")

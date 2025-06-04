@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 SceneManager="*res://Script/scene_manager.gd"
 PlayerState="*res://Script/player_state.gd"
+GlobalEnvironment="*res://Script/global_env.gd"
 
 [input]
 

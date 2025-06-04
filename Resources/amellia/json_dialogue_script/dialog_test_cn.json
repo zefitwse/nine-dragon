@@ -7,7 +7,12 @@
 	"options": [
 	  {
 		"option_text": "询问其他搜索方法",
-		"jump_to_msg_id": 2
+		"jump_to_msg_id": 2,
+		"action": {
+			"camera_effect":{ 
+				"type": "shake" 
+			}
+		}
 	  },
 	  {
 		"option_text": "建议联系其他部门核实",

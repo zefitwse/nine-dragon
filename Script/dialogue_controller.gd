@@ -17,7 +17,7 @@ var id_map_dialogue:Dictionary = {}
 var original_process_paused = false
 var dialogue_trigger:DialogueTrigger = null
 var icon_src_map:Dictionary = {}
- 
+var action_manager
 signal dialogue_closed
 
 func _ready() -> void:
@@ -26,6 +26,7 @@ func _ready() -> void:
 	dialogue_panel.gui_input.connect(_on_panel_area_pressed)
 	connect_option_buttons()
 	process_mode = Node.PROCESS_MODE_ALWAYS
+	action_manager = ActionManager.new()
 	
 func connect_option_buttons():
 	for i in range(choosing_box.get_child_count()):
@@ -34,7 +35,13 @@ func connect_option_buttons():
 			button.pressed.connect(_on_option_selected.bind(i,button))
 
 func _on_option_selected(option_index,button:Button):
-	var next_path_id:int = current_dialogue.options[option_index]["jump_to_msg_id"]
+	var options = current_dialogue.options[option_index]
+	var next_path_id:int = options.get("jump_to_msg_id",null)
+	var action = options.get("action",null)
+	
+	if action is Dictionary:
+		await action_manager.execute(action)
+	
 	current_dialogue_id = next_path_id
 	_on_click_area_pressed()
 	button.release_focus()
