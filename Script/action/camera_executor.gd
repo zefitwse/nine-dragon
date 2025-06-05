@@ -10,7 +10,6 @@ func _init(target_camera_ref:Camera2D = null) -> void:
 			print("CameraExecutor: camera getting failure")
 			
 func shake_with_shock()->void:
-	print("shake camera trigger")
 	var duration = 1
 	var intensity = 0.15
 	# For testing

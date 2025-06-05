@@ -4,10 +4,9 @@ extends Camera2D
 
 func _init():
 	var setting_result = GlobalEnvironment._set("main_camera",self)
-	if setting_result: 
-		print("camera init") 
-	else: 
+	if not setting_result: 
 		print("camera init failure")
+		
 func _process(delta):
 	if target:
 		position = position.lerp(target.position, delta * smooth_speed)

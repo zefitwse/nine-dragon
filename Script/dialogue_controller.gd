@@ -69,10 +69,28 @@ func _on_click_area_pressed():
 		show_dialogue_msg(current_dialogue_id)
 
 func load_option(option_list:Array):
-	for i in range(option_list.size()):
-		choosing_box.get_child(i).text = option_list[i].option_text
+	var existing_buttons: Array[Node] = choosing_box.get_children() as Array[Node]
+	var option_count: int = option_list.size()
 	
-
+	var template_button: Button = existing_buttons[0] if not existing_buttons.is_empty() else Button.new()
+	
+	while existing_buttons.size() < option_count:
+		var button: Button = template_button.duplicate()
+		choosing_box.add_child(button)
+		existing_buttons.append(button)	
+		
+	while existing_buttons.size() > option_count:
+		var button: Button = existing_buttons.pop_back()
+		button.queue_free()
+		
+	for i in range(option_count):
+		var button: Button = existing_buttons[i]
+		button.name = "option" + str(i)
+		button.text = option_list[i].option_text
+		
+	if existing_buttons.is_empty() or existing_buttons[0] != template_button:
+		template_button.free()
+		
 func show_dialogue_msg(current_dialogue_id:int):
 	is_typing = true
 	current_dialogue = id_map_dialogue[current_dialogue_id]
