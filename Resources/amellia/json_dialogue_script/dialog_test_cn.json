@@ -11,7 +11,12 @@
 		"action": {
 			"camera_effect":{ 
 				"type": "shake" 
-			}
+			},
+			"sound_effect":[
+				{
+					"path":"test.mp4"
+				}
+			]
 		}
 	  },
 	  {

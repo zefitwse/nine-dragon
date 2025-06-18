@@ -1,0 +1,17 @@
+~ start
+Adam: [[Hi|Hello|Howdy]], 你好
+Amelia: [#Happy] Here are some choices.
+- First one
+	Nathan: You picked the first one.
+- Second one 
+	This is for test
+	=> test_content
+- Start again => start
+- End the conversation => END
+Adam: For more information see the online documentation.
+=> END
+
+~ test_content
+Adam: 这是测试
+do ActionController.execute({"camera_effect":{"test":"test"}})
+=> END

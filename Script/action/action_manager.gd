@@ -3,7 +3,7 @@ class_name ActionManager extends Node
 enum ActionType {CAMERA_SHAKE}
 var action_list = {}
 
-func _init() -> void:
+func _ready()-> void:
 	action_list[ActionType.CAMERA_SHAKE] = CameraExecutor.new() as Action
 
 func execute(action_data:Dictionary)->void:

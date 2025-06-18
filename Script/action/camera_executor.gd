@@ -1,14 +1,7 @@
 class_name CameraExecutor extends Action
 var target_camera:Camera2D = null
 
-func _init(target_camera_ref:Camera2D = null) -> void:
-	if target_camera_ref != null:
-		target_camera = target_camera_ref
-	else:
-		target_camera = GlobalEnvironment._get("main_camera")
-		if target_camera == null:
-			print("CameraExecutor: camera getting failure")
-			
+
 func shake_with_shock()->void:
 	var duration = 1
 	var intensity = 0.15
@@ -20,5 +13,8 @@ func shake_with_shock()->void:
 	target_camera.zoom = original_zoom
 
 func execute(action_data:Dictionary)->void:
+	target_camera = GlobalEnvironment._get("main_camera")
+	if target_camera == null:
+		print("CameraExecutor: camera getting failure")
 	#TBC
 	shake_with_shock()

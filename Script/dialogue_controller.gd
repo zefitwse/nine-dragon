@@ -39,6 +39,7 @@ func _on_option_selected(option_index,button:Button):
 	var next_path_id:int = options.get("jump_to_msg_id",null)
 	var action = options.get("action",null)
 	
+	# Action detection and execution
 	if action is Dictionary:
 		await action_manager.execute(action)
 	

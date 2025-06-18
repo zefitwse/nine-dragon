@@ -8,10 +8,8 @@ var dialogue: String
 var icon_path:String
 var msg_content:String
 var source_path: String
-
 var option_msg: String
 var options: Array
-
 var id_to_dialogue: Dictionary = {}
 
 func load_dialogues():
@@ -50,9 +48,6 @@ func parse_json(json_string: String) -> Array:
 	else:
 		print("JSON 解析错误:", json.get_error_text()) 
 		return []
-		
-func get_dialogue_by_msg_id(msg_id:int):
-	return id_to_dialogue.get(msg_id)
 	
 func get_dialogue_id_mapping(json_file_path:String) -> Dictionary:
 	source_path = json_file_path

@@ -24,7 +24,9 @@ func _on_body_exited(body: Node2D) -> void:
 		
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("e_pressed") and area_active == true:
-		create_dialogue()
+		DialogueManager.show_dialogue_balloon_scene(preload("res://Scenes/dialogue_layout.tscn"),preload("res://dialogue/amelia_dialogue.dialogue"),"start")
+		
+		#create_dialogue()
 
 func create_dialogue():
 	dialogue_instance = DIALOGUE_SCENE.instantiate()
