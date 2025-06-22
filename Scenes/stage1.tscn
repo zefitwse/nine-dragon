@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://buupo7vfyxgjr"]
+
+[ext_resource type="Script" uid="uid://dgwor4ieac61p" path="res://Script/stage_1.gd" id="1_0x0mv"]
+[ext_resource type="PackedScene" uid="uid://b2ryfguonl6qy" path="res://Scenes/characters/PlayerRole.tscn" id="2_bgp44"]
+[ext_resource type="PackedScene" uid="uid://cbgd8h5qt15ie" path="res://Scenes/characters/boatman.tscn" id="3_bgp44"]
+
+[node name="Stage1" type="Node2D"]
+script = ExtResource("1_0x0mv")
+
+[node name="PlayeRole" parent="." instance=ExtResource("2_bgp44")]
+position = Vector2(297, 236)
+
+[node name="Boatman" parent="." instance=ExtResource("3_bgp44")]
+position = Vector2(233, 226)

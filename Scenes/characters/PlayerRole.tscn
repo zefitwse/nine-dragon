@@ -259,7 +259,7 @@ script = ExtResource("1_swk73")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
 position = Vector2(2, -10)
 sprite_frames = SubResource("SpriteFrames_s86xt")
-animation = &"move_up"
+animation = &"idle_right"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 position = Vector2(2, 0)
