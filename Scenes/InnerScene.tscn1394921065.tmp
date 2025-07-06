@@ -4163,8 +4163,7 @@ shape = SubResource("RectangleShape2D_qqbtl")
 position = Vector2(239, 254)
 
 [node name="DialogueTrigger" parent="npc_amelia" instance=ExtResource("4_h7ipb")]
-dialogue_script_path = "res://dialogue/stage1.dialogue"
-dialogue_layer = "res://Scenes/dialogue/dialogue_layout.tscn"
+json_src_path = "res://Resources/amellia/json_dialogue_script/dialog_test_cn.json"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="npc_amelia/DialogueTrigger"]
 position = Vector2(-0.5, -2)

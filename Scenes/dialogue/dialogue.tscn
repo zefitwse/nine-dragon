@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://ksyo376hwc7"]
 
-[ext_resource type="Texture2D" uid="uid://dttw6kv8ouejm" path="res://icon.svg" id="2_p21q5"]
+[ext_resource type="Texture2D" uid="uid://dttw6kv8ouejm" path="res://icon.svg" id="1_7rkex"]
 
 [sub_resource type="GDScript" id="GDScript_5rqxr"]
 script/source = "class_name DialogueController extends CanvasLayer
@@ -238,7 +238,7 @@ offset_left = -62.502
 offset_top = -56.4709
 offset_right = 62.498
 offset_bottom = 56.5291
-texture = ExtResource("2_p21q5")
+texture = ExtResource("1_7rkex")
 expand_mode = 3
 
 [node name="next_btn" type="Button" parent="dialogue_panel"]

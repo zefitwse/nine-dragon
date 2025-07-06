@@ -8,6 +8,9 @@ func _set(property: StringName, value: Variant) -> bool:
 		"main_camera":
 			main_camera = value
 			return true
+		"main_character":
+			main_character = value
+			return true
 	return false
 	
 func _get(property: StringName) -> Variant:

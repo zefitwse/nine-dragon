@@ -1,0 +1,19 @@
+~ start
+Boatman: [#portarit_path=boatman/boatman_happy.png] [[你好|很高兴见到你|很开心]], 又见到生面孔搭我的船
+Boatman: 我的船啊，它就是又快又稳。
+Boatman: 最近不少人都拜托我送不少东西去那个岛上呢。
+Boatman: [#portarit_path=boatman/boatman_doubt.png] 但是那个鬼地方还真冷，最近居然还有不少人搭我的船过去，可真是奇怪呢~
+
+=> main_character_introduce
+=> END
+
+~ main_character_introduce
+Adam: 这个船夫还挺热情的，听他所说最近还有其他人坐他的船去了岛上，难道是他们？
+Adam: 船夫帮岛主送的东西是有什么用处吗？
+=> test_content
+=> END
+
+~ test_content
+do ActionController.execute({"camera_effect":{"action":"shake"},"sound_effect":{"src_path":"res://Assets/sound/shock_sound.mp3"}})
+Adam: 难道说！！！！
+=> END

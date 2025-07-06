@@ -5,8 +5,8 @@ var area_active = false
 
 var is_dialogue_activa:bool
 
-@export var json_src_path: String
-
+@export var dialogue_script_path: String
+@export var dialogue_layer: String
 func _ready() -> void:
 	if not chatting_tips_texture:
 		print("chatting_tips_texture not found")
@@ -27,6 +27,6 @@ func _on_body_exited(body: Node2D) -> void:
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("e_pressed") and area_active == true:
-		DialogueManager.show_dialogue_balloon_scene(preload("res://Scenes/dialogue_layout.tscn"),preload("res://dialogue/amelia_dialogue.dialogue"),"start")
+		DialogueManager.show_dialogue_balloon_scene(load(dialogue_layer),load(dialogue_script_path),"start")
 
 	

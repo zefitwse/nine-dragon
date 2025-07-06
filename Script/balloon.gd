@@ -91,7 +91,9 @@ func start(dialogue_resource: DialogueResource, title: String, extra_game_states
 
 ## Apply any changes to the balloon given a new [DialogueLine].
 func apply_dialogue_line() -> void:
-	var portarit_path:String = "res://Assets/portraits/%s.png" % dialogue_line.character
+	var portarit_path:String = "res://Assets/portraits/%s.png" % dialogue_line.character.to_lower()
+	var tag_value = "res://Assets/portraits/%s" % dialogue_line.get_tag_value("portarit_path")
+	portarit_path = tag_value if dialogue_line.get_tag_value("portarit_path") != "" else portarit_path
 	if ResourceLoader.exists(portarit_path):
 		portarit.texture = load(portarit_path)
 	else:

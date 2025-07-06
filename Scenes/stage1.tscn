@@ -1,8 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://buupo7vfyxgjr"]
+[gd_scene load_steps=7 format=3 uid="uid://buupo7vfyxgjr"]
 
 [ext_resource type="Script" uid="uid://dgwor4ieac61p" path="res://Script/stage_1.gd" id="1_0x0mv"]
 [ext_resource type="PackedScene" uid="uid://b2ryfguonl6qy" path="res://Scenes/characters/PlayerRole.tscn" id="2_bgp44"]
 [ext_resource type="PackedScene" uid="uid://cbgd8h5qt15ie" path="res://Scenes/characters/boatman.tscn" id="3_bgp44"]
+[ext_resource type="PackedScene" uid="uid://bi2u6aa6vs5pl" path="res://Scenes/dialogue/dialogue_trigger.tscn" id="4_twg8k"]
+[ext_resource type="Texture2D" uid="uid://b6r0rlcll5f1j" path="res://Assets/chatting.png" id="5_h603c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n4imy"]
+size = Vector2(16, 23)
 
 [node name="Stage1" type="Node2D"]
 script = ExtResource("1_0x0mv")
@@ -12,3 +17,19 @@ position = Vector2(297, 236)
 
 [node name="Boatman" parent="." instance=ExtResource("3_bgp44")]
 position = Vector2(233, 226)
+
+[node name="DialogueTrigger" parent="Boatman" instance=ExtResource("4_twg8k")]
+dialogue_path = "res://dialogue/stage1.dialogue"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Boatman/DialogueTrigger"]
+position = Vector2(0, 1.5)
+shape = SubResource("RectangleShape2D_n4imy")
+
+[node name="chatting_tips" type="TextureRect" parent="Boatman"]
+visible = false
+offset_left = 2.99998
+offset_top = -18.0
+offset_right = 203.0
+offset_bottom = 182.0
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("5_h603c")
