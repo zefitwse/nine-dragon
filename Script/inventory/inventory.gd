@@ -16,9 +16,22 @@ func slot_gui_input(event: InputEvent, slot:Slot):
 		# Button pressed and the mouse key is left
 		if event.button_index == MOUSE_BUTTON_LEFT && event.pressed:
 			if holding_item != null:
-				slot.put_into_slot(holding_item)
-				holding_item = null
-			else:
-				var tem_item = slot.item
+				if !slot.item:
+					slot.put_into_slot(holding_item)
+					holding_item = null
+				else:
+					var temp_item = slot.item
+					slot.pick_from_slot()
+					temp_item.global_position = event.global_position
+					slot.put_into_slot(holding_item)
+					holding_item = temp_item
+			elif slot.item:
+				holding_item = slot.item
 				slot.pick_from_slot()
+				holding_item.global_position = get_global_mouse_position()
+		
+func _input(event: InputEvent) -> void:
+	if holding_item:
+		holding_item.global_position = get_global_mouse_position()
+	
 	

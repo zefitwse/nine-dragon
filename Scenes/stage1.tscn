@@ -19,7 +19,6 @@ position = Vector2(297, 236)
 position = Vector2(233, 226)
 
 [node name="DialogueTrigger" parent="Boatman" instance=ExtResource("4_twg8k")]
-dialogue_path = "res://dialogue/stage1.dialogue"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Boatman/DialogueTrigger"]
 position = Vector2(0, 1.5)

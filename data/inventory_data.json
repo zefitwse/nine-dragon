@@ -1,0 +1,31 @@
+[{
+	"id": 1,
+	"ItemCategory": "蓝莓",
+	"StackSize": 1,
+	"icon_src_path": "res://Assets/items/berry01blue.png"
+},
+{
+	"id":2,
+	"ItemCategory": "放大镜",
+	"StackSize": 1,
+	"interact": "observe",
+	"icon_src_path": "res://Assets/items/berry04red.png"
+},
+{
+	"id":3,
+	"ItemCategory": "十边形杯子",
+	"StackSize": 1,
+	"icon_src_path": "res://Assets/items/glass03yellow.png"
+},
+{
+	"id":4,
+	"ItemCategory": "角色笔记",
+	"StackSize": 4,
+	"icon_src_path": "res://Assets/items/glass04purple.png"
+},
+{
+	"id":5,
+	"ItemCategory": "钥匙",
+	"StackSize": 1,
+	"icon_src_path": "res://Assets/items/glass06green.png"
+}]

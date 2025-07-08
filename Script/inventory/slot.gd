@@ -13,6 +13,7 @@ func _ready() -> void:
 	if randi() % 2 == 0:
 		item = item_class.instantiate()
 		self.add_child(item)
+		
 	refresh_style()
 
 func refresh_style():

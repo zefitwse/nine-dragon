@@ -5,7 +5,17 @@
 [node name="Item" type="Node2D"]
 script = ExtResource("1_fd70s")
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="item_icon" type="TextureRect" parent="."]
 offset_right = 30.0
 offset_bottom = 30.0
+mouse_filter = 2
 expand_mode = 1
+
+[node name="quantity" type="Label" parent="."]
+visible = false
+offset_left = 16.0
+offset_top = 15.0
+offset_right = 35.0
+offset_bottom = 38.0
+scale = Vector2(0.5, 0.5)
+text = "99"
