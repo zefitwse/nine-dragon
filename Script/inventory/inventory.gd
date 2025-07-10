@@ -5,12 +5,18 @@ var holding_item = null
 
 func _ready() -> void:
 	# To connect event listener between the slot components
-	if inventory_slots == null:
-		print("WARNING: Inventory_slots isn't exist")
-	else:
-		for slot in  inventory_slots.get_children():
-			slot.connect("gui_input",slot_gui_input.bind(slot))
-
+	for slot in  inventory_slots.get_children():
+		slot.connect("gui_input",slot_gui_input.bind(slot))
+	
+	initialize_inventory()
+		
+func initialize_inventory():
+	var slots = inventory_slots.get_children()
+	for i in  slots.size():
+		if PlayerInventory.inventory.has(i):
+			slots[i].initialize_item(PlayerInventory.inventory.get(i)[0],PlayerInventory.inventory.get(i)[1])
+			
+			
 func slot_gui_input(event: InputEvent, slot:Slot):
 	if event is InputEventMouseButton:
 		# Button pressed and the mouse key is left

@@ -23,6 +23,7 @@ GlobalEnvironment="*res://Script/global_env.gd"
 ActionController="*res://Script/action/action_manager.gd"
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 JsonData="*res://Resources/util/json_data.gd"
+PlayerInventory="*res://Script/player/player_inventory.gd"
 
 [dialogue_manager]
 

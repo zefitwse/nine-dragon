@@ -1,0 +1,118 @@
+[gd_scene load_steps=2 format=3 uid="uid://bncgxisgnqjv7"]
+
+[sub_resource type="GDScript" id="GDScript_op5fe"]
+script/source = "class_name Slot extends Panel
+
+const item_class = preload(\"res://Scenes/inventory/Item.tscn\")
+var item = null
+
+var empty_style_box:StyleBoxFlat = null
+var default_style_box:StyleBoxFlat = null
+
+func _ready() -> void:
+	empty_style_box = StyleBoxFlat.new()
+	default_style_box = StyleBoxFlat.new()
+	
+	if randi() % 2 == 0:
+		item = item_class.instantiate()
+		self.add_child(item)
+		
+	refresh_style()
+
+func refresh_style():
+	if item == null:
+		set(\"theme_override_styles/panel\",empty_style_box)
+	else:
+		set(\"theme_override_styles/panel\",default_style_box)
+
+func pick_from_slot():
+	remove_child(item)
+	find_parent(\"Inventory\").add_child(item)
+	item = null
+	refresh_style()
+
+func put_into_slot(new_item):
+	item = new_item
+	item.position = Vector2(0,0)
+	find_parent(\"Inventory\").remove_child(item)
+	add_child(item)
+	refresh_style()
+"
+
+[node name="HostBar" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.507
+anchor_top = 0.782
+anchor_right = 0.507
+anchor_bottom = 0.782
+offset_left = -395.064
+offset_top = -40.7361
+offset_right = 404.936
+offset_bottom = 69.2639
+grow_horizontal = 2
+grow_vertical = 0
+pivot_offset = Vector2(327, 57)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/TextureRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="hostbar" type="GridContainer" parent="CanvasLayer"]
+offset_left = 223.0
+offset_top = 482.0
+offset_right = 951.0
+offset_bottom = 562.0
+theme_override_constants/h_separation = 28
+columns = 7
+
+[node name="hostbar_slot1" type="Panel" parent="CanvasLayer/hostbar"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+script = SubResource("GDScript_op5fe")
+metadata/_custom_type_script = "uid://budtk7m0csoni"
+
+[node name="hostbar_slot2" type="Panel" parent="CanvasLayer/hostbar"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+script = SubResource("GDScript_op5fe")
+metadata/_custom_type_script = "uid://budtk7m0csoni"
+
+[node name="hostbar_slot3" type="Panel" parent="CanvasLayer/hostbar"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+script = SubResource("GDScript_op5fe")
+metadata/_custom_type_script = "uid://budtk7m0csoni"
+
+[node name="hostbar_slot4" type="Panel" parent="CanvasLayer/hostbar"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+script = SubResource("GDScript_op5fe")
+metadata/_custom_type_script = "uid://budtk7m0csoni"
+
+[node name="hostbar_slot5" type="Panel" parent="CanvasLayer/hostbar"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+script = SubResource("GDScript_op5fe")
+metadata/_custom_type_script = "uid://budtk7m0csoni"
+
+[node name="hostbar_slot6" type="Panel" parent="CanvasLayer/hostbar"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+script = SubResource("GDScript_op5fe")
+metadata/_custom_type_script = "uid://budtk7m0csoni"
+
+[node name="hostbar_slot7" type="Panel" parent="CanvasLayer/hostbar"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+script = SubResource("GDScript_op5fe")
+metadata/_custom_type_script = "uid://budtk7m0csoni"
