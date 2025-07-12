@@ -8,6 +8,13 @@ var inventory = {
 	2:[2,1]
 }
 
+var hostbar = {
+	0:[1,23], # slot index -> item id and quantity
+	1:[3,11],
+	2:[2,1]
+}
+
+
 func add_item(item_id,qty):
 	for item in inventory:
 		if inventory[item][0] == item_id:

@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://bncgxisgnqjv7"]
+[gd_scene load_steps=3 format=3 uid="uid://lsvp77jkqiyn"]
 
 [ext_resource type="Script" uid="uid://budtk7m0csoni" path="res://Script/inventory/slot.gd" id="1_uu8sf"]
 [ext_resource type="Script" uid="uid://c5tbs5ki1p208" path="res://Script/inventory/host_bar.gd" id="1_ydytg"]
@@ -11,13 +11,13 @@ script = ExtResource("1_ydytg")
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
 anchors_preset = -1
 anchor_left = 0.507
-anchor_top = 0.782
+anchor_top = 0.858
 anchor_right = 0.507
-anchor_bottom = 0.782
-offset_left = -395.064
-offset_top = -40.7361
-offset_right = 404.936
-offset_bottom = 69.2639
+anchor_bottom = 0.858
+offset_left = -350.064
+offset_top = -34.984
+offset_right = 349.936
+offset_bottom = 35.016
 grow_horizontal = 2
 grow_vertical = 0
 pivot_offset = Vector2(327, 57)
@@ -33,51 +33,51 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="hostbar" type="GridContainer" parent="CanvasLayer"]
-offset_left = 223.0
-offset_top = 482.0
-offset_right = 951.0
-offset_bottom = 562.0
+offset_left = 304.0
+offset_top = 530.0
+offset_right = 1032.0
+offset_bottom = 610.0
 theme_override_constants/h_separation = 28
 columns = 7
 
 [node name="hostbar_slot1" type="Panel" parent="CanvasLayer/hostbar"]
-custom_minimum_size = Vector2(80, 80)
+custom_minimum_size = Vector2(55, 55)
 layout_mode = 2
 script = ExtResource("1_uu8sf")
 metadata/_custom_type_script = "uid://budtk7m0csoni"
 
 [node name="hostbar_slot2" type="Panel" parent="CanvasLayer/hostbar"]
-custom_minimum_size = Vector2(80, 80)
+custom_minimum_size = Vector2(55, 55)
 layout_mode = 2
 script = ExtResource("1_uu8sf")
 metadata/_custom_type_script = "uid://budtk7m0csoni"
 
 [node name="hostbar_slot3" type="Panel" parent="CanvasLayer/hostbar"]
-custom_minimum_size = Vector2(80, 80)
+custom_minimum_size = Vector2(55, 55)
 layout_mode = 2
 script = ExtResource("1_uu8sf")
 metadata/_custom_type_script = "uid://budtk7m0csoni"
 
 [node name="hostbar_slot4" type="Panel" parent="CanvasLayer/hostbar"]
-custom_minimum_size = Vector2(80, 80)
+custom_minimum_size = Vector2(55, 55)
 layout_mode = 2
 script = ExtResource("1_uu8sf")
 metadata/_custom_type_script = "uid://budtk7m0csoni"
 
 [node name="hostbar_slot5" type="Panel" parent="CanvasLayer/hostbar"]
-custom_minimum_size = Vector2(80, 80)
+custom_minimum_size = Vector2(55, 55)
 layout_mode = 2
 script = ExtResource("1_uu8sf")
 metadata/_custom_type_script = "uid://budtk7m0csoni"
 
 [node name="hostbar_slot6" type="Panel" parent="CanvasLayer/hostbar"]
-custom_minimum_size = Vector2(80, 80)
+custom_minimum_size = Vector2(55, 55)
 layout_mode = 2
 script = ExtResource("1_uu8sf")
 metadata/_custom_type_script = "uid://budtk7m0csoni"
 
 [node name="hostbar_slot7" type="Panel" parent="CanvasLayer/hostbar"]
-custom_minimum_size = Vector2(80, 80)
+custom_minimum_size = Vector2(55, 55)
 layout_mode = 2
 script = ExtResource("1_uu8sf")
 metadata/_custom_type_script = "uid://budtk7m0csoni"

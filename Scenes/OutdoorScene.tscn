@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=4 uid="uid://1x7gv8if7ueq"]
+[gd_scene load_steps=36 format=4 uid="uid://niu8r7y6huwh"]
 
 [ext_resource type="Texture2D" uid="uid://c8yip53yh6dk6" path="res://Assets/grounds/4_seasons_ground_tiles.png" id="1_d687a"]
 [ext_resource type="Script" uid="uid://b66o0olvfng87" path="res://Script/scenes/outdoor_scene.gd" id="1_npf24"]

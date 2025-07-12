@@ -2,9 +2,13 @@ extends Node2D
 @onready var host_bar_slots = $CanvasLayer/hostbar
 
 func _ready() -> void:
-	#if host_bar_slots == null:
-		#print("WARNING: Inventory_slots isn't exist")
-	#else:
 		#for slot in  host_bar_slots.get_children():
 			#slot.connect("gui_input",slot_gui_input.bind(slot))
-	pass
+	initialize_inventory()
+		
+func initialize_inventory():
+	var slots = host_bar_slots.get_children()
+	for i in  slots.size():
+		if PlayerInventory.hostbar.has(i):
+			slots[i].initialize_item(PlayerInventory.hostbar.get(i)[0],PlayerInventory.hostbar.get(i)[1])
+			

@@ -6,16 +6,18 @@
 script = ExtResource("1_fd70s")
 
 [node name="item_icon" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(55, 55)
 offset_right = 30.0
 offset_bottom = 30.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
 mouse_filter = 2
 expand_mode = 1
 
 [node name="quantity" type="Label" parent="."]
-visible = false
-offset_left = 16.0
-offset_top = 15.0
-offset_right = 35.0
-offset_bottom = 38.0
+offset_left = 40.0
+offset_top = 38.0
+offset_right = 59.0
+offset_bottom = 61.0
 scale = Vector2(0.5, 0.5)
 text = "99"

@@ -16,125 +16,118 @@ corner_detail = 10
 script = ExtResource("1_3kgbm")
 
 [node name="container_bg" type="TextureRect" parent="."]
-offset_left = 2.0
-offset_top = 2.0
-offset_right = 260.0
-offset_bottom = 181.0
+offset_left = 336.0
+offset_top = 182.0
+offset_right = 813.0
+offset_bottom = 509.0
 
 [node name="ColorRect" type="ColorRect" parent="."]
-offset_left = 2.0
-offset_top = 2.0
-offset_right = 255.0
-offset_bottom = 176.0
+offset_left = 334.0
+offset_top = 180.0
+offset_right = 811.0
+offset_bottom = 507.0
 
 [node name="GridContainer" type="GridContainer" parent="."]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 57.5
-offset_top = 23.5
-offset_right = 204.5
-offset_bottom = 159.5
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/h_separation = 9
-theme_override_constants/v_separation = 5
+offset_left = 437.0
+offset_top = 218.0
+offset_right = 708.0
+offset_bottom = 471.0
+theme_override_constants/h_separation = 17
+theme_override_constants/v_separation = 11
 columns = 4
 
 [node name="Slot1" type="Panel" parent="GridContainer"]
-custom_minimum_size = Vector2(30, 30)
+custom_minimum_size = Vector2(55, 55)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_5t3tc")
 script = ExtResource("1_5w0tc")
 
 [node name="Slot2" type="Panel" parent="GridContainer"]
-custom_minimum_size = Vector2(30, 30)
+custom_minimum_size = Vector2(55, 55)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_5t3tc")
 script = ExtResource("1_5w0tc")
 
 [node name="Slot3" type="Panel" parent="GridContainer"]
-custom_minimum_size = Vector2(30, 30)
+custom_minimum_size = Vector2(55, 55)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_5t3tc")
 script = ExtResource("1_5w0tc")
 
 [node name="Slot4" type="Panel" parent="GridContainer"]
-custom_minimum_size = Vector2(30, 30)
+custom_minimum_size = Vector2(55, 55)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_5t3tc")
 script = ExtResource("1_5w0tc")
 
 [node name="Slot5" type="Panel" parent="GridContainer"]
-custom_minimum_size = Vector2(30, 30)
+custom_minimum_size = Vector2(55, 55)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_5t3tc")
 script = ExtResource("1_5w0tc")
 
 [node name="Slot6" type="Panel" parent="GridContainer"]
-custom_minimum_size = Vector2(30, 30)
+custom_minimum_size = Vector2(55, 55)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_5t3tc")
 script = ExtResource("1_5w0tc")
 
 [node name="Slot7" type="Panel" parent="GridContainer"]
-custom_minimum_size = Vector2(30, 30)
+custom_minimum_size = Vector2(55, 55)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_5t3tc")
 script = ExtResource("1_5w0tc")
 
 [node name="Slot8" type="Panel" parent="GridContainer"]
-custom_minimum_size = Vector2(30, 30)
+custom_minimum_size = Vector2(55, 55)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_5t3tc")
 script = ExtResource("1_5w0tc")
 
 [node name="Slot9" type="Panel" parent="GridContainer"]
-custom_minimum_size = Vector2(30, 30)
+custom_minimum_size = Vector2(55, 55)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_5t3tc")
 script = ExtResource("1_5w0tc")
 
 [node name="Slot10" type="Panel" parent="GridContainer"]
-custom_minimum_size = Vector2(30, 30)
+custom_minimum_size = Vector2(55, 55)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_5t3tc")
 script = ExtResource("1_5w0tc")
 
 [node name="Slot11" type="Panel" parent="GridContainer"]
-custom_minimum_size = Vector2(30, 30)
+custom_minimum_size = Vector2(55, 55)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_5t3tc")
 script = ExtResource("1_5w0tc")
 
 [node name="Slot12" type="Panel" parent="GridContainer"]
-custom_minimum_size = Vector2(30, 30)
+custom_minimum_size = Vector2(55, 55)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_5t3tc")
 script = ExtResource("1_5w0tc")
 
 [node name="Slot13" type="Panel" parent="GridContainer"]
-custom_minimum_size = Vector2(30, 30)
+custom_minimum_size = Vector2(55, 55)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_5t3tc")
 script = ExtResource("1_5w0tc")
 
 [node name="Slot14" type="Panel" parent="GridContainer"]
-custom_minimum_size = Vector2(30, 30)
+custom_minimum_size = Vector2(55, 55)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_5t3tc")
 script = ExtResource("1_5w0tc")
 
 [node name="Slot15" type="Panel" parent="GridContainer"]
-custom_minimum_size = Vector2(30, 30)
+custom_minimum_size = Vector2(55, 55)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_5t3tc")
 script = ExtResource("1_5w0tc")
 
 [node name="Slot16" type="Panel" parent="GridContainer"]
-custom_minimum_size = Vector2(30, 30)
+custom_minimum_size = Vector2(55, 55)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_5t3tc")
 script = ExtResource("1_5w0tc")

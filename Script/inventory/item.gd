@@ -31,6 +31,7 @@ func set_item(item_id,qty):
 		print("Item not exits")
 	else:
 		$item_icon.texture = load(item["icon_src_path"])
+		
 		item_quantity = qty
 
 		if item_quantity == 1:
