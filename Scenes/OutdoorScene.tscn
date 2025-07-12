@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=4 uid="uid://niu8r7y6huwh"]
+[gd_scene load_steps=37 format=4 uid="uid://niu8r7y6huwh"]
 
 [ext_resource type="Texture2D" uid="uid://c8yip53yh6dk6" path="res://Assets/grounds/4_seasons_ground_tiles.png" id="1_d687a"]
 [ext_resource type="Script" uid="uid://b66o0olvfng87" path="res://Script/scenes/outdoor_scene.gd" id="1_npf24"]
@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://d0fv3kynidafp" path="res://Assets/houses/walls_roofs_doors_demo.png" id="10_b45ka"]
 [ext_resource type="Script" uid="uid://djrj464la4g0t" path="res://Script/join_us/notice_board.gd" id="10_pr2o5"]
 [ext_resource type="Texture2D" uid="uid://d2x1b3eeu1s17" path="res://Assets/houses/room_builder_16x16.png" id="11_pr2o5"]
+[ext_resource type="PackedScene" uid="uid://b8bytxjmxyml6" path="res://Scenes/user_interface/user_interface.tscn" id="13_pr2o5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0hol4"]
 texture = ExtResource("1_d687a")
@@ -5534,6 +5535,8 @@ offset_right = 123.0
 offset_bottom = 66.0
 text = "关闭"
 flat = true
+
+[node name="user_interface" parent="." instance=ExtResource("13_pr2o5")]
 
 [connection signal="body_entered" from="Background/House/DoorArea2D" to="." method="_on_door_area_2d_body_entered"]
 [connection signal="body_entered" from="Background/Grass/notice_board_node_2d/notice_board_area_2d" to="Background/Grass/notice_board_node_2d" method="_on_notice_board_area_2d_body_entered"]
