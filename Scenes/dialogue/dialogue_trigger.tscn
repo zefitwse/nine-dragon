@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bi2u6aa6vs5pl"]
 
-[ext_resource type="Script" uid="uid://dfwjdu0x32gs1" path="res://Script/dialogue_trigger.gd" id="1_e2jh5"]
+[ext_resource type="Script" uid="uid://dfwjdu0x32gs1" path="res://Script/dialogue/dialogue_trigger.gd" id="1_e2jh5"]
 
 [node name="DialogueTrigger" type="Area2D"]
 collision_layer = 1033

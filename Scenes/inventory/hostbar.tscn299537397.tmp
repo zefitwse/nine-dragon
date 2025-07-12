@@ -1,7 +1,45 @@
 [gd_scene load_steps=3 format=3 uid="uid://bncgxisgnqjv7"]
 
-[ext_resource type="Script" uid="uid://budtk7m0csoni" path="res://Script/inventory/slot.gd" id="1_uu8sf"]
 [ext_resource type="Script" uid="uid://c5tbs5ki1p208" path="res://Script/inventory/host_bar.gd" id="1_ydytg"]
+
+[sub_resource type="GDScript" id="GDScript_op5fe"]
+script/source = "class_name Slot extends Panel
+
+const item_class = preload(\"res://Scenes/inventory/Item.tscn\")
+var item = null
+
+var empty_style_box:StyleBoxFlat = null
+var default_style_box:StyleBoxFlat = null
+
+func _ready() -> void:
+	empty_style_box = StyleBoxFlat.new()
+	default_style_box = StyleBoxFlat.new()
+	
+	if randi() % 2 == 0:
+		item = item_class.instantiate()
+		self.add_child(item)
+		
+	refresh_style()
+
+func refresh_style():
+	if item == null:
+		set(\"theme_override_styles/panel\",empty_style_box)
+	else:
+		set(\"theme_override_styles/panel\",default_style_box)
+
+func pick_from_slot():
+	remove_child(item)
+	find_parent(\"Inventory\").add_child(item)
+	item = null
+	refresh_style()
+
+func put_into_slot(new_item):
+	item = new_item
+	item.position = Vector2(0,0)
+	find_parent(\"Inventory\").remove_child(item)
+	add_child(item)
+	refresh_style()
+"
 
 [node name="HostBar" type="Node2D"]
 script = ExtResource("1_ydytg")
@@ -43,41 +81,41 @@ columns = 7
 [node name="hostbar_slot1" type="Panel" parent="CanvasLayer/hostbar"]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
-script = ExtResource("1_uu8sf")
+script = SubResource("GDScript_op5fe")
 metadata/_custom_type_script = "uid://budtk7m0csoni"
 
 [node name="hostbar_slot2" type="Panel" parent="CanvasLayer/hostbar"]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
-script = ExtResource("1_uu8sf")
+script = SubResource("GDScript_op5fe")
 metadata/_custom_type_script = "uid://budtk7m0csoni"
 
 [node name="hostbar_slot3" type="Panel" parent="CanvasLayer/hostbar"]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
-script = ExtResource("1_uu8sf")
+script = SubResource("GDScript_op5fe")
 metadata/_custom_type_script = "uid://budtk7m0csoni"
 
 [node name="hostbar_slot4" type="Panel" parent="CanvasLayer/hostbar"]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
-script = ExtResource("1_uu8sf")
+script = SubResource("GDScript_op5fe")
 metadata/_custom_type_script = "uid://budtk7m0csoni"
 
 [node name="hostbar_slot5" type="Panel" parent="CanvasLayer/hostbar"]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
-script = ExtResource("1_uu8sf")
+script = SubResource("GDScript_op5fe")
 metadata/_custom_type_script = "uid://budtk7m0csoni"
 
 [node name="hostbar_slot6" type="Panel" parent="CanvasLayer/hostbar"]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
-script = ExtResource("1_uu8sf")
+script = SubResource("GDScript_op5fe")
 metadata/_custom_type_script = "uid://budtk7m0csoni"
 
 [node name="hostbar_slot7" type="Panel" parent="CanvasLayer/hostbar"]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
-script = ExtResource("1_uu8sf")
+script = SubResource("GDScript_op5fe")
 metadata/_custom_type_script = "uid://budtk7m0csoni"
