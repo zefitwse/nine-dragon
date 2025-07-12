@@ -17,8 +17,9 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-SceneManager="*res://Script/scene_manager.gd"
-PlayerState="*res://Script/player_state.gd"
+SceneManager="*res://Script/managers/scenes/scene_state.gd"
+PlayerState="*res://Script/managers/player/player_state.gd"
+WholeToastScene="*res://Scenes/game_scenes/whole_toast_scene.tscn"
 GlobalEnvironment="*res://Script/global_env.gd"
 ActionController="*res://Script/action/action_manager.gd"
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
@@ -32,6 +33,9 @@ runtime/balloon_path="res://Scenes/dialogue/dialogue_layout.tscn"
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
+
+
+
 
 [input]
 
