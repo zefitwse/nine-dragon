@@ -1,6 +1,6 @@
 [gd_scene load_steps=28 format=3 uid="uid://dcfti7vb4fljt"]
 
-[ext_resource type="Texture2D" uid="uid://hv40v0xryf4e" path="res://Sprites/Amelia/Amelia_idle_anim_16x16.png" id="2_cqxgg"]
+[ext_resource type="Texture2D" uid="uid://hv40v0xryf4e" path="res://Assets/sprites/roles/Amelia/Amelia_idle_anim_16x16.png" id="2_cqxgg"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_y5n34"]
 atlas = ExtResource("2_cqxgg")

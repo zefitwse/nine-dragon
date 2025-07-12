@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dwhe5ediwl43"
-path="res://.godot/imported/Amelia_sit_16x16.png-5b638e77172e94442eb7140653dada2d.ctex"
+uid="uid://bjltw8wsqrd0b"
+path="res://.godot/imported/Alex_idle_anim_16x16.png-293206f5b2b62312408af4ae91f95b7e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Amelia/Amelia_sit_16x16.png"
-dest_files=["res://.godot/imported/Amelia_sit_16x16.png-5b638e77172e94442eb7140653dada2d.ctex"]
+source_file="res://Assets/sprites/roles/boatman/Alex_idle_anim_16x16.png"
+dest_files=["res://.godot/imported/Alex_idle_anim_16x16.png-293206f5b2b62312408af4ae91f95b7e.ctex"]
 
 [params]
 

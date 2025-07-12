@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=4 uid="uid://ba0a7hekwy10j"]
 
 [ext_resource type="PackedScene" uid="uid://b2ryfguonl6qy" path="res://Scenes/characters/PlayerRole.tscn" id="1_8gjd5"]
-[ext_resource type="Texture2D" uid="uid://cqm5mbo03vn3s" path="res://Assets/GroundFloor.png" id="3_2nld2"]
+[ext_resource type="Texture2D" uid="uid://cqm5mbo03vn3s" path="res://Assets/houses/ground_floor.png" id="3_2nld2"]
 [ext_resource type="PackedScene" uid="uid://dcfti7vb4fljt" path="res://Scenes/characters/amelia.tscn" id="3_lylen"]
 [ext_resource type="PackedScene" uid="uid://bi2u6aa6vs5pl" path="res://Scenes/dialogue/dialogue_trigger.tscn" id="4_h7ipb"]
 [ext_resource type="Texture2D" uid="uid://b6r0rlcll5f1j" path="res://Assets/chatting.png" id="5_lylen"]

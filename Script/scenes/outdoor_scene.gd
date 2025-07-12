@@ -1,7 +1,7 @@
 #场景切换脚本
 extends Node2D
 
-@export_file("*.tscn") var target_scene_path: String = SceneManager.inner_scene #SceneManager负责维护所有场景路径和场景变量名的映射
+@export_file("*.tscn") var target_scene_path: String = SceneManager.inner_scene_1 #SceneManager负责维护所有场景路径和场景变量名的映射
 
 #源：DoorArea2D 
 #目标： OuterdoorScene
@@ -12,8 +12,5 @@ func _on_door_area_2d_body_entered(body: Node2D) -> void:
 		if(flag):
 			get_tree().change_scene_to_file(target_scene_path);
 		else:
-			print();
 			WholeToastScene.show_toast("你还不能进入这个场景！")
-			#$AcceptDialog.dialog_text = "你还不能进入这个场景！"
-			#$AcceptDialog.popup_centered()
 	pass 

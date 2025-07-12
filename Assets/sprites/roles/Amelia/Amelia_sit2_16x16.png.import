@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bjlbh2yrqup0r"
-path="res://.godot/imported/Amelia_idle_16x16.png-25cca08b64c774720694af04b9843b73.ctex"
+uid="uid://cusmgygqoqxwm"
+path="res://.godot/imported/Amelia_sit2_16x16.png-04ad1407f4af45532d34bfb10ad24a27.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Amelia/Amelia_idle_16x16.png"
-dest_files=["res://.godot/imported/Amelia_idle_16x16.png-25cca08b64c774720694af04b9843b73.ctex"]
+source_file="res://Assets/sprites/roles/Amelia/Amelia_sit2_16x16.png"
+dest_files=["res://.godot/imported/Amelia_sit2_16x16.png-04ad1407f4af45532d34bfb10ad24a27.ctex"]
 
 [params]
 

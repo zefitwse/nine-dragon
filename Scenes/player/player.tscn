@@ -252,19 +252,20 @@ radius = 5.09902
 [node name="Player" type="CharacterBody2D" parent="." groups=["Player"]]
 z_index = 1
 position = Vector2(-3, -4)
-collision_mask = 2
+collision_layer = 9
+collision_mask = 11
 script = ExtResource("1_swk73")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
-position = Vector2(2, -8)
+position = Vector2(2, -10)
 sprite_frames = SubResource("SpriteFrames_s86xt")
-animation = &"idle_down"
+animation = &"idle_right"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 position = Vector2(2, 0)
 shape = SubResource("CircleShape2D_jm3w1")
 
-[node name="Camera2D" type="Camera2D" parent="Player"]
+[node name="Camera2D" type="Camera2D" parent="Player" groups=["main_camera"]]
 position = Vector2(2, 1)
 zoom = Vector2(3, 3)
 script = ExtResource("4_s86xt")

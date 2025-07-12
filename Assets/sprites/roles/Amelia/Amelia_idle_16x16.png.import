@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://hjcv70kmau60"
-path="res://.godot/imported/Amelia_phone_16x16.png-7259a448208b23d03f4f13808d099bb1.ctex"
+uid="uid://bjlbh2yrqup0r"
+path="res://.godot/imported/Amelia_idle_16x16.png-48903e6196ed635b0463857271d9f101.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Amelia/Amelia_phone_16x16.png"
-dest_files=["res://.godot/imported/Amelia_phone_16x16.png-7259a448208b23d03f4f13808d099bb1.ctex"]
+source_file="res://Assets/sprites/roles/Amelia/Amelia_idle_16x16.png"
+dest_files=["res://.godot/imported/Amelia_idle_16x16.png-48903e6196ed635b0463857271d9f101.ctex"]
 
 [params]
 

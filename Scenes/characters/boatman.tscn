@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://cbgd8h5qt15ie"]
 
-[ext_resource type="Texture2D" uid="uid://bjltw8wsqrd0b" path="res://Sprites/boatman/Alex_idle_anim_16x16.png" id="1_7whfw"]
+[ext_resource type="Texture2D" uid="uid://bjltw8wsqrd0b" path="res://Assets/sprites/roles/boatman/Alex_idle_anim_16x16.png" id="1_7whfw"]
 [ext_resource type="Script" uid="uid://bxtakkmq2748w" path="res://Script/characters/boatman.gd" id="1_qh6m4"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qh6m4"]
