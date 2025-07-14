@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://b8bytxjmxyml6"]
 
-[ext_resource type="PackedScene" uid="uid://ixc2m8w6jwuh" path="res://Scenes/inventory/hostbar.tscn" id="1_ni3et"]
+[ext_resource type="PackedScene" uid="uid://ixc2m8w6jwuh" path="res://Scenes/inventory/Hostbar.tscn" id="1_ni3et"]
 [ext_resource type="PackedScene" uid="uid://bq2ic6gbbdpg1" path="res://Scenes/inventory/Inventory.tscn" id="2_0grjs"]
 
 [node name="user_interface" type="CanvasLayer"]
