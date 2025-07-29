@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://b8bytxjmxyml6"]
+[gd_scene load_steps=4 format=3 uid="uid://b8bytxjmxyml6"]
 
-[ext_resource type="PackedScene" uid="uid://ixc2m8w6jwuh" path="res://Scenes/inventory/Hostbar.tscn" id="1_ni3et"]
+[ext_resource type="PackedScene" uid="uid://dvdofd0cl36g5" path="res://Scenes/inventory/hostbar.tscn" id="1_ni3et"]
+[ext_resource type="Script" uid="uid://dh4nq00tfgoo6" path="res://Script/user_interface/user_interface.gd" id="1_ymdud"]
 [ext_resource type="PackedScene" uid="uid://bq2ic6gbbdpg1" path="res://Scenes/inventory/Inventory.tscn" id="2_0grjs"]
 
 [node name="user_interface" type="CanvasLayer"]
+script = ExtResource("1_ymdud")
 
 [node name="HostBar" parent="." instance=ExtResource("1_ni3et")]
 

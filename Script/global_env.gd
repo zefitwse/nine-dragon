@@ -2,6 +2,7 @@ extends Node
 
 var main_camera: Camera2D = null
 var main_character: CharacterBody2D = null
+var hostbar: HostBar = null
 
 func _set(property: StringName, value: Variant) -> bool:
 	match property:
@@ -11,6 +12,9 @@ func _set(property: StringName, value: Variant) -> bool:
 		"main_character":
 			main_character = value
 			return true
+		"host_bar":
+			hostbar = value
+			return true
 	return false
 	
 func _get(property: StringName) -> Variant:
@@ -19,4 +23,6 @@ func _get(property: StringName) -> Variant:
 			return main_camera
 		"main_character":
 			return main_character
+		"host_bar":
+			return hostbar
 	return null
