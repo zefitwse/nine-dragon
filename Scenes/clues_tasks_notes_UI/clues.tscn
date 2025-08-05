@@ -6272,6 +6272,67 @@ autowrap_mode = 3
 
 [node name="clue7" type="Label" parent="ColorRect"]
 z_index = 1
+layout_mode = 0
+offset_left = 210.0
+offset_top = 146.0
+offset_right = 527.0
+offset_bottom = 196.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.0276207, 0.0264048, 0.0119407, 1)
+theme_override_fonts/font = SubResource("FontVariation_gx48n")
+theme_override_font_sizes/font_size = 18
+autowrap_mode = 3
+
+[node name="clue8" type="Label" parent="ColorRect"]
+z_index = 1
+offset_left = 210.0
+offset_top = 146.0
+offset_right = 527.0
+offset_bottom = 196.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.0276207, 0.0264048, 0.0119407, 1)
+theme_override_fonts/font = SubResource("FontVariation_gx48n")
+theme_override_font_sizes/font_size = 18
+autowrap_mode = 3
+
+[node name="clue9" type="Label" parent="ColorRect"]
+z_index = 1
+offset_left = 210.0
+offset_top = 146.0
+offset_right = 527.0
+offset_bottom = 196.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.0276207, 0.0264048, 0.0119407, 1)
+theme_override_fonts/font = SubResource("FontVariation_gx48n")
+theme_override_font_sizes/font_size = 18
+autowrap_mode = 3
+
+[node name="clue10" type="Label" parent="ColorRect"]
+z_index = 1
+offset_left = 210.0
+offset_top = 146.0
+offset_right = 527.0
+offset_bottom = 196.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.0276207, 0.0264048, 0.0119407, 1)
+theme_override_fonts/font = SubResource("FontVariation_gx48n")
+theme_override_font_sizes/font_size = 18
+autowrap_mode = 3
+
+[node name="clue11" type="Label" parent="ColorRect"]
+z_index = 1
+offset_left = 210.0
+offset_top = 146.0
+offset_right = 527.0
+offset_bottom = 196.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.0276207, 0.0264048, 0.0119407, 1)
+theme_override_fonts/font = SubResource("FontVariation_gx48n")
+theme_override_font_sizes/font_size = 18
+autowrap_mode = 3
+
+[node name="clue12" type="Label" parent="ColorRect"]
+z_index = 1
 offset_left = 210.0
 offset_top = 146.0
 offset_right = 527.0
