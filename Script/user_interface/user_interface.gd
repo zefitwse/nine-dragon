@@ -7,7 +7,7 @@ var inventory_display_flage = false
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventKey:
 		# Judge the input keycode whether equal to setting
-		if InputMap.event_is_action(event,"show_inventory") and event.pressed:
+		if (InputMap.event_is_action(event,"show_inventory") or InputMap.event_is_action(event,"close_set")) and event.pressed:
 			if !inventory_display_flage:
 				host_bar.visible = false
 				inventory.visible = true

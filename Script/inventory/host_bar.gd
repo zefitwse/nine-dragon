@@ -4,7 +4,6 @@ class_name HostBar extends Node2D
 var selected_slot:Slot
 func _ready() -> void:
 	GlobalEnvironment._set("host_bar",self)
-	
 	for slot in  host_bar_slots.get_children():
 		slot.connect("gui_input",slot_input.bind(slot))
 	initialize_inventory()
@@ -19,6 +18,7 @@ func initialize_inventory():
 
 					
 # Item click event
+# TBC
 func slot_input(event: InputEvent, slot:Slot):
 	if event is InputEventMouseButton:
 		# Button pressed and the mouse key is left

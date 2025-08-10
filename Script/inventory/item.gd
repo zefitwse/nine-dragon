@@ -10,8 +10,7 @@ var target_item:Dictionary
 
 #Just for testing
 func _ready() -> void:
-	var inventory_data:Array = JsonData.item_data
-	target_item =  JsonData.data_id_index(inventory_data)
+	target_item =  JsonData._get_dict_object()
 	
 func increase_item_quantity(add_val):
 	item_quantity += add_val

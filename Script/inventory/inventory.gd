@@ -4,38 +4,40 @@ const slot_class = preload("res://Script/inventory/slot.gd")
 @onready var host_bar_slots = $hostbar
 var holding_item = null
 var tem_slot:Slot = null
-var global_host_bar:HostBar;
+var global_host_bar:HostBar
+var host_bar_slots_children = null
+var inventory_slots_children = null
 
 func _ready() -> void:
-	
 	global_host_bar = GlobalEnvironment._get("host_bar")
 	# To connect event listener between the slot components
 	initialize_slot()
 	initialize_inventory()
-	
+
+# To binding the trigger for each slot
 func initialize_slot():
+	host_bar_slots_children = host_bar_slots.get_children()
+	inventory_slots_children = inventory_slots.get_children()
 	var slot_index = 0
-	for slot in host_bar_slots.get_children():
+	for slot in host_bar_slots_children:
 		#define the slot id
 		slot.slot_index = slot_index
 		slot.connect("gui_input",slot_gui_input.bind(slot))
 		slot_index += 1
 		
-	for slot in inventory_slots.get_children():
+	for slot in inventory_slots_children:
 		slot.slot_index = slot_index
 		slot.connect("gui_input",slot_gui_input.bind(slot))
 		slot_index += 1
 		
 func initialize_inventory():
-	var host_bar_slots = host_bar_slots.get_children()
-	for i in host_bar_slots.size():
+	for i in host_bar_slots_children.size():
 		if PlayerInventory.inventory.has(i):
-			host_bar_slots[i].initialize_item(PlayerInventory.inventory.get(i)[0],PlayerInventory.inventory.get(i)[1],i)
+			host_bar_slots_children[i].initialize_item(PlayerInventory.inventory.get(i)[0],PlayerInventory.inventory.get(i)[1],i)
 			
-	var inventory_slots = inventory_slots.get_children()	
-	for i in  range(host_bar_slots.size(),inventory_slots.size()):
+	for i in  range(host_bar_slots_children.size(),inventory_slots_children.size()):
 		if PlayerInventory.inventory.has(i):
-			inventory_slots[i].initialize_item(PlayerInventory.inventory.get(i)[0],PlayerInventory.inventory.get(i)[1],i)
+			inventory_slots_children[i].initialize_item(PlayerInventory.inventory.get(i)[0],PlayerInventory.inventory.get(i)[1],i)
 	
 			
 func slot_gui_input(event: InputEvent, slot:Slot):
@@ -57,9 +59,10 @@ func slot_gui_input(event: InputEvent, slot:Slot):
 					#holding_item = temp_item
 					#tem_slot = slot
 				PlayerInventory.swap_item_position(tem_slot.slot_index,slot.slot_index)
-				# handle the host bar state
-				global_host_bar.refresh_slot()
-					
+				
+				# Update the host bar state
+				if tem_slot.slot_index in range(host_bar_slots_children.size()) or slot.slot_index in range(host_bar_slots_children.size()):
+					global_host_bar.refresh_slot()
 					
 			elif slot.item:
 				holding_item = slot.item

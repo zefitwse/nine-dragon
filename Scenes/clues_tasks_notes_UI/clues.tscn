@@ -6285,6 +6285,7 @@ autowrap_mode = 3
 
 [node name="clue8" type="Label" parent="ColorRect"]
 z_index = 1
+layout_mode = 0
 offset_left = 210.0
 offset_top = 146.0
 offset_right = 527.0
@@ -6297,6 +6298,7 @@ autowrap_mode = 3
 
 [node name="clue9" type="Label" parent="ColorRect"]
 z_index = 1
+layout_mode = 0
 offset_left = 210.0
 offset_top = 146.0
 offset_right = 527.0
@@ -6309,6 +6311,7 @@ autowrap_mode = 3
 
 [node name="clue10" type="Label" parent="ColorRect"]
 z_index = 1
+layout_mode = 0
 offset_left = 210.0
 offset_top = 146.0
 offset_right = 527.0
@@ -6321,6 +6324,7 @@ autowrap_mode = 3
 
 [node name="clue11" type="Label" parent="ColorRect"]
 z_index = 1
+layout_mode = 0
 offset_left = 210.0
 offset_top = 146.0
 offset_right = 527.0
@@ -6333,6 +6337,7 @@ autowrap_mode = 3
 
 [node name="clue12" type="Label" parent="ColorRect"]
 z_index = 1
+layout_mode = 0
 offset_left = 210.0
 offset_top = 146.0
 offset_right = 527.0
