@@ -1,0 +1,74 @@
+[gd_scene load_steps=5 format=3 uid="uid://b34xxtall15t5"]
+
+[ext_resource type="Script" uid="uid://dpxpipdmdyp8o" path="res://Script/inventory/scene_item.gd" id="1_2plsp"]
+[ext_resource type="Texture2D" uid="uid://dttw6kv8ouejm" path="res://icon.svg" id="2_lgf0j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lgf0j"]
+size = Vector2(35, 35)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lgf0j"]
+bg_color = Color(0.0901987, 0.0452887, 0.00821645, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 2
+border_color = Color(0.280682, 0.113788, 0.113681, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_color = Color(0.427541, 0.284289, 0.207449, 0.6)
+shadow_size = 3
+
+[node name="SceneItem" type="Node2D"]
+script = ExtResource("1_2plsp")
+
+[node name="trigger_area" type="Area2D" parent="."]
+position = Vector2(17, 18)
+
+[node name="item_icon" type="TextureRect" parent="trigger_area"]
+custom_minimum_size = Vector2(35, 35)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -17.5
+offset_top = -17.5
+offset_right = 17.5
+offset_bottom = 17.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+texture = ExtResource("2_lgf0j")
+expand_mode = 1
+
+[node name="trigger_area" type="CollisionShape2D" parent="trigger_area"]
+shape = SubResource("RectangleShape2D_lgf0j")
+
+[node name="prompt_container" type="Panel" parent="."]
+visible = false
+offset_left = -22.0
+offset_top = -47.0
+offset_right = 58.0
+offset_bottom = -14.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_lgf0j")
+metadata/_edit_use_anchors_ = true
+
+[node name="prompt" type="Label" parent="prompt_container"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -23.5
+offset_top = -10.0
+offset_right = 23.5
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 14
+text = "testing"

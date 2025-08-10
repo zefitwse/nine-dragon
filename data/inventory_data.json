@@ -1,31 +1,44 @@
 [{
 	"id": 1,
 	"ItemCategory": "蓝莓",
+	"ItemName": "蓝莓",
 	"StackSize": 1,
-	"icon_src_path": "res://Assets/items/berry01blue.png"
+	"SrcPath": "res://Assets/items/berry01blue.png"
 },
 {
-	"id":2,
+	"id": 2,
 	"ItemCategory": "放大镜",
+	"ItemName": "放大镜",
 	"StackSize": 1,
 	"interact": "observe",
-	"icon_src_path": "res://Assets/items/berry04red.png"
+	"SrcPath": "res://Assets/items/berry04red.png"
 },
 {
-	"id":3,
+	"id": 3,
 	"ItemCategory": "十边形杯子",
+	"ItemName": "十边形杯子",
 	"StackSize": 1,
-	"icon_src_path": "res://Assets/items/glass03yellow.png"
+	"SrcPath": "res://Assets/items/glass03yellow.png"
 },
 {
-	"id":4,
+	"id": 4,
 	"ItemCategory": "角色笔记",
+	"ItemName": "角色笔记",
 	"StackSize": 4,
-	"icon_src_path": "res://Assets/items/glass04purple.png"
+	"SrcPath": "res://Assets/items/glass04purple.png"
 },
 {
-	"id":5,
+	"id": 5,
 	"ItemCategory": "钥匙",
+	"ItemName": "钥匙",
 	"StackSize": 1,
-	"icon_src_path": "res://Assets/items/glass06green.png"
-}]
+	"SrcPath": "res://Assets/items/glass06green.png"
+},
+{
+	"id": 6,
+	"ItemCategory": "飞行棋",
+	"ItemName": "飞行棋",
+	"StackSize": 1,
+	"SrcPath": "res://Assets/items/berry01blue.png"
+},
+]

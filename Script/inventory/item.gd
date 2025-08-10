@@ -5,11 +5,12 @@ var description: String
 var item_weight: float
 var item_quantity: int
 var stackable: bool
+var icon_src_path:String
 var target_item:Dictionary
 
 
 #Just for testing
-func _ready() -> void:
+func _init() -> void:
 	target_item =  JsonData._get_dict_object()
 	
 func increase_item_quantity(add_val):
@@ -29,7 +30,8 @@ func set_item(item_id,qty):
 		# warning alarm
 		print("Item not exits")
 	else:
-		$item_icon.texture = load(item["icon_src_path"])
+		icon_src_path = item["SrcPath"]
+		$item_icon.texture = load(icon_src_path)
 		
 		item_quantity = qty
 

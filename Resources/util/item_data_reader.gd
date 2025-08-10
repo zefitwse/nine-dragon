@@ -4,7 +4,7 @@ var item_data:Array
 var json_data: Array
 @export var file_path = "res://data/inventory_data.json"
 
-func _ready() -> void:
+func _init() -> void:
 	item_data =load_json_file(file_path)
 	
 func load_json_file(file_path:String):

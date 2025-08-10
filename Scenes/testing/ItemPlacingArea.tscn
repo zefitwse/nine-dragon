@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4kot3yqy863c"]
+
+[ext_resource type="PackedScene" uid="uid://b2ryfguonl6qy" path="res://Scenes/player/player.tscn" id="1_ny5un"]
+[ext_resource type="PackedScene" uid="uid://b34xxtall15t5" path="res://Scenes/inventory/scene_item.tscn" id="2_2d1bv"]
+
+[node name="ItemPlacingArea" type="Node2D"]
+
+[node name="PlayRole" parent="." groups=["Player"] instance=ExtResource("1_ny5un")]
+z_index = 99
+position = Vector2(459, 336)
+scale = Vector2(1.15, 1.15)
+
+[node name="SceneItem" parent="." instance=ExtResource("2_2d1bv")]
+position = Vector2(391, 302)
+scale = Vector2(0.6, 0.6)
+item_id = 6
