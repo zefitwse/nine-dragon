@@ -30,6 +30,11 @@ WholeToastScene="*res://Scenes/game_scenes/whole_toast_scene.tscn"
 
 runtime/balloon_path="res://Scenes/dialogue/dialogue_layout.tscn"
 
+[display]
+
+window/size/viewport_width=1600
+window/size/viewport_height=900
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
