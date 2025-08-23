@@ -4,6 +4,7 @@ extends Node
 @export var outdoor_scene: String = "res://Scenes/game_scenes/outdoor_scene.tscn"  
 @export var inner_scene_1: String = "res://Scenes/game_scenes/InnerScene.tscn" 
 @export var clue_notes: String = "res://Scenes/clue_notes_ui/clue.tscn"
+@export var game_menu: String = "res://Scenes/game_menu/game_menu.tscn"
 
 #定义scene_status的取值范围 can_enter 解锁（可进入）、not_enter 未解锁（不可进入）、done 完成（可进入）
 enum scene_status { can_enter, not_enter, done }  

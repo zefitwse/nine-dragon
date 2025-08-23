@@ -6173,14 +6173,15 @@ offset_bottom = 1034.0
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
 offset_left = 1.0
-offset_top = 2.0
-offset_right = 1998.0
+offset_top = -14.0
+offset_right = 1705.0
 offset_bottom = 1067.0
 color = Color(0, 0, 0, 0.415686)
 script = ExtResource("1_fj07u")
 
 [node name="page_button" type="Button" parent="ColorRect"]
 z_index = 1
+z_as_relative = false
 custom_minimum_size = Vector2(200, 100)
 layout_mode = 0
 offset_left = 1154.0
