@@ -3,6 +3,15 @@ extends Node2D
 
 @export_file("*.tscn") var target_scene_path: String = SceneManager.inner_scene_1 #SceneManager负责维护所有场景路径和场景变量名的映射
 
+
+#初始化的时候要加载用户的设置，比如游戏声音大小
+func _ready() -> void:
+	var volume = SettingsManager.load_volume()      # 读取保存的音量
+	var db = lerp(-30.0, 0.0, volume / 100.0)
+	var bus_idx = AudioServer.get_bus_index("Master")
+	AudioServer.set_bus_volume_db(bus_idx, db)
+
+
 #源：DoorArea2D 
 #目标： OuterdoorScene
 func _on_door_area_2d_body_entered(body: Node2D) -> void:

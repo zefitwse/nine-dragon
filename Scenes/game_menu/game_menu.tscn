@@ -39,10 +39,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -124.0
-offset_top = -151.0
-offset_right = 126.0
-offset_bottom = 155.0
+offset_left = -123.5
+offset_top = -150.5
+offset_right = 125.5
+offset_bottom = 72.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 14
@@ -63,19 +63,23 @@ text = "保存游戏
 "
 clip_text = true
 
-[node name="VolumeButton" type="Button" parent="GameMenu/MenuPanel/VBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="GameMenu/MenuPanel/VBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
-theme_override_font_sizes/font_size = 28
-text = "调节音量"
-clip_text = true
+size_flags_vertical = 2
 
-[node name="BrightnessButton" type="Button" parent="GameMenu/MenuPanel/VBoxContainer"]
+[node name="VoiceHBoxContainer" type="HBoxContainer" parent="GameMenu/MenuPanel/VBoxContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+
+[node name="VoiceLabel" type="Label" parent="GameMenu/MenuPanel/VBoxContainer/VBoxContainer/VoiceHBoxContainer"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
 theme_override_font_sizes/font_size = 28
-text = "调节亮度"
-clip_text = true
+text = "声音："
+
+[node name="VoiceSlider" type="HSlider" parent="GameMenu/MenuPanel/VBoxContainer/VBoxContainer/VoiceHBoxContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_horizontal = 3
 
 [node name="QuitButton" type="Button" parent="GameMenu/MenuPanel/VBoxContainer"]
 layout_mode = 2
@@ -86,6 +90,7 @@ clip_text = true
 
 [node name="Panel" type="Panel" parent="GameMenu"]
 visible = false
+layout_mode = 0
 offset_left = -1.0
 offset_top = 1.0
 offset_right = 1599.0
@@ -112,21 +117,7 @@ offset_top = 71.0
 offset_right = 85.0
 offset_bottom = 98.0
 
-[node name="BrightnessPanel" type="Panel" parent="GameMenu/Panel"]
-layout_mode = 0
-offset_right = 1599.0
-offset_bottom = 896.0
-
-[node name="HSlider" type="HSlider" parent="GameMenu/Panel/BrightnessPanel"]
-layout_mode = 0
-offset_left = 294.0
-offset_top = 242.0
-offset_right = 539.0
-offset_bottom = 412.0
-
-[node name="close_button" type="Button" parent="GameMenu/Panel/BrightnessPanel"]
-layout_mode = 0
-offset_left = 146.0
-offset_top = 70.0
-offset_right = 190.0
-offset_bottom = 112.0
+[connection signal="pressed" from="GameMenu/MenuPanel/VBoxContainer/ResumeButton" to="." method="_on_resume_button_pressed"]
+[connection signal="button_down" from="GameMenu/MenuPanel/VBoxContainer/SaveButton" to="." method="_on_save_button_button_down"]
+[connection signal="value_changed" from="GameMenu/MenuPanel/VBoxContainer/VBoxContainer/VoiceHBoxContainer/VoiceSlider" to="." method="_on_voice_slider_value_changed"]
+[connection signal="pressed" from="GameMenu/MenuPanel/VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]

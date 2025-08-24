@@ -26,6 +26,7 @@ JsonData="*res://Resources/util/item_data_reader.gd"
 PlayerInventory="*res://Script/player/player_inventory.gd"
 WholeToastScene="*res://Scenes/game_scenes/whole_toast_scene.tscn"
 GameMenu="*res://Scenes/game_menu/game_menu.tscn"
+SettingsManager="*res://Script/settings/setting_manager.gd"
 
 [dialogue_manager]
 
