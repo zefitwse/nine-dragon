@@ -1,16 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://dd8ov8ra5uu4d"]
+[gd_scene load_steps=3 format=3 uid="uid://dd8ov8ra5uu4d"]
 
 [ext_resource type="Script" uid="uid://cmbv00yr81g2l" path="res://Script/game_menu/game_menu.gd" id="1_n3v37"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n3v37"]
 bg_color = Color(0, 0, 0, 0.313726)
-
-[sub_resource type="Theme" id="Theme_gy3xk"]
-default_font_size = 24
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gy3xk"]
-bg_color = Color(0.995098, 0.950156, 0.933698, 1)
-border_color = Color(0.615611, 0.842597, 0.913586, 1)
 
 [node name="CanvasLayer" type="CanvasLayer"]
 process_mode = 3
@@ -87,35 +80,6 @@ theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 28
 text = "退出游戏"
 clip_text = true
-
-[node name="Panel" type="Panel" parent="GameMenu"]
-visible = false
-layout_mode = 0
-offset_left = -1.0
-offset_top = 1.0
-offset_right = 1599.0
-offset_bottom = 898.0
-theme = SubResource("Theme_gy3xk")
-theme_override_styles/panel = SubResource("StyleBoxFlat_gy3xk")
-
-[node name="VolumePanel" type="Panel" parent="GameMenu/Panel"]
-layout_mode = 0
-offset_right = 1599.0
-offset_bottom = 896.0
-
-[node name="HSlider" type="HSlider" parent="GameMenu/Panel/VolumePanel"]
-layout_mode = 0
-offset_left = 283.0
-offset_top = 63.0
-offset_right = 639.0
-offset_bottom = 225.0
-
-[node name="close_button" type="Button" parent="GameMenu/Panel/VolumePanel"]
-layout_mode = 0
-offset_left = 45.0
-offset_top = 71.0
-offset_right = 85.0
-offset_bottom = 98.0
 
 [connection signal="pressed" from="GameMenu/MenuPanel/VBoxContainer/ResumeButton" to="." method="_on_resume_button_pressed"]
 [connection signal="button_down" from="GameMenu/MenuPanel/VBoxContainer/SaveButton" to="." method="_on_save_button_button_down"]

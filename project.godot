@@ -25,8 +25,9 @@ DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 JsonData="*res://Resources/util/item_data_reader.gd"
 PlayerInventory="*res://Script/player/player_inventory.gd"
 WholeToastScene="*res://Scenes/game_scenes/whole_toast_scene.tscn"
-GameMenu="*res://Scenes/game_menu/game_menu.tscn"
+GameMenuScene="*res://Scenes/game_menu/game_menu.tscn"
 SettingsManager="*res://Script/settings/setting_manager.gd"
+UserInterfaceScene="*res://Scenes/user_interface/user_interface.tscn"
 
 [dialogue_manager]
 

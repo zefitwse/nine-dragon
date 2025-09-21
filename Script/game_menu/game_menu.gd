@@ -1,13 +1,13 @@
 extends CanvasLayer
 
-
 #菜单初始化的时候，要获取音量的设置值
 func _ready():
 	var volume = SettingsManager.load_volume()
 	$GameMenu/MenuPanel/VBoxContainer/VBoxContainer/VoiceHBoxContainer/VoiceSlider.value = volume
 	_on_voice_slider_value_changed(volume)
 	
-	hide()  # 初始隐藏菜单
+	# 初始隐藏菜单
+	hide()  
 	
 
 #监听esc按下事件

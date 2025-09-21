@@ -3,10 +3,10 @@
 [ext_resource type="Script" uid="uid://kr3w2uwy6l33" path="res://Script/scenes/whole_toast.gd" id="1_p41ke"]
 
 [node name="Toast" type="CanvasLayer"]
+visible = false
 script = ExtResource("1_p41ke")
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
-visible = false
 offset_right = 1153.0
 offset_bottom = 61.0
 
