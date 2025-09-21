@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=4 uid="uid://ba0a7hekwy10j"]
+[gd_scene load_steps=13 format=4 uid="uid://ftlt7ihk4856"]
 
 [ext_resource type="PackedScene" uid="uid://b2ryfguonl6qy" path="res://Scenes/player/player.tscn" id="1_8gjd5"]
 [ext_resource type="Texture2D" uid="uid://cqm5mbo03vn3s" path="res://Assets/houses/ground_floor.png" id="3_2nld2"]

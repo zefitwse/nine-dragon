@@ -1,0 +1,42 @@
+[gd_scene load_steps=3 format=3 uid="uid://b6j54m6drmvei"]
+
+[ext_resource type="Script" uid="uid://ha37yeoss503" path="res://Script/global_message/global_message_handle.gd" id="1_8sfsl"]
+
+[sub_resource type="Theme" id="Theme_1imy0"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+visible = false
+script = ExtResource("1_8sfsl")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -800.0
+offset_right = 802.0
+offset_bottom = 72.0
+grow_horizontal = 2
+theme = SubResource("Theme_1imy0")
+
+[node name="Panel" type="Panel" parent="Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -801.0
+offset_right = 799.0
+offset_bottom = 72.0
+grow_horizontal = 2
+
+[node name="Label" type="Label" parent="Control/Panel"]
+layout_mode = 2
+offset_left = 764.0
+offset_top = 5.0
+offset_right = 834.0
+offset_bottom = 60.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+vertical_alignment = 1

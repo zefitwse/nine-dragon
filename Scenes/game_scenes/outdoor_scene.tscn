@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=4 uid="uid://niu8r7y6huwh"]
+[gd_scene load_steps=38 format=4 uid="uid://niu8r7y6huwh"]
 
 [ext_resource type="Script" uid="uid://b66o0olvfng87" path="res://Script/scenes/outdoor_scene.gd" id="1_38yje"]
 [ext_resource type="Texture2D" uid="uid://ba1mhtmfhy1w5" path="res://Assets/houses/outdoor_house.png" id="2_oesdr"]
@@ -12,7 +12,6 @@
 [ext_resource type="Texture2D" uid="uid://d0fv3kynidafp" path="res://Assets/houses/walls_roofs_doors_demo.png" id="11_o7v5p"]
 [ext_resource type="Texture2D" uid="uid://b40a7wh0evac0" path="res://Assets/trees/4_seasons_trees.png" id="12_kqj4g"]
 [ext_resource type="Texture2D" uid="uid://d2x1b3eeu1s17" path="res://Assets/houses/room_builder_16x16.png" id="13_2e48t"]
-[ext_resource type="PackedScene" uid="uid://2g6wa14bp2tr" path="res://Scenes/game_scenes/whole_toast_scene.tscn" id="14_38yje"]
 [ext_resource type="PackedScene" uid="uid://b2ryfguonl6qy" path="res://Scenes/player/player.tscn" id="14_cek3p"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lbwpc"]
@@ -7140,8 +7139,6 @@ offset_right = 123.0
 offset_bottom = 66.0
 text = "关闭"
 flat = true
-
-[node name="whole_toast" parent="." instance=ExtResource("14_38yje")]
 
 [connection signal="body_entered" from="Background/House/DoorArea2D" to="." method="_on_door_area_2d_body_entered"]
 [connection signal="body_entered" from="Background/Grass/notice_board_node_2d/notice_board_area_2d" to="Background/Grass/notice_board_node_2d" method="_on_notice_board_area_2d_body_entered"]

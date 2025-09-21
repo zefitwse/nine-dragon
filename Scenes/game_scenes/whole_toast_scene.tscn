@@ -1,6 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://2g6wa14bp2tr"]
-
-[ext_resource type="Script" uid="uid://kr3w2uwy6l33" path="res://Script/scenes/whole_toast.gd" id="1_p41ke"]
+[gd_scene format=3 uid="uid://4ccjpvq8lv33"]
 
 [node name="Toast" type="CanvasLayer"]
 visible = false
