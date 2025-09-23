@@ -11,7 +11,6 @@ config_version=5
 [application]
 
 config/name="nine-dragon"
-run/main_scene="uid://niu8r7y6huwh"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -29,8 +28,6 @@ UserInterfaceScene="*res://Scenes/user_interface/user_interface.tscn"
 SettingsManager="*res://Script/settings/setting_manager.gd"
 GlobalMessage_tscn="*res://Scenes/global_message/global_message.tscn"
 
-
-
 [dialogue_manager]
 
 runtime/balloon_path="res://Scenes/dialogue/dialogue_layout.tscn"
@@ -39,7 +36,6 @@ runtime/balloon_path="res://Scenes/dialogue/dialogue_layout.tscn"
 
 window/size/viewport_width=1600
 window/size/viewport_height=900
-window/size/mode=3
 window/stretch/mode="canvas_items"
 
 [editor_plugins]

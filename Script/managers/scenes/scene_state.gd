@@ -2,7 +2,6 @@ extends Node
 # 维护所有变量和场景路径的映射关系
 @export var inner_scene_dr: String = "res://Scenes/game_scenes/inner_scene.tscn" 
 @export var outdoor_scene: String = "res://Scenes/game_scenes/outdoor_scene.tscn"  
-@export var inner_scene: String = "res://Scenes/game_scenes/InnerScene.tscn" 
 @export var clue_notes: String = "res://Scenes/clue_notes_ui/clue.tscn"
 @export var game_menu: String = "res://Scenes/game_menu/game_menu.tscn"
 
@@ -13,8 +12,6 @@ enum scene_status { can_enter, not_enter, done }
 var scene_states: Dictionary = {
 	outdoor_scene: scene_status.can_enter,
 	inner_scene_dr: scene_status.not_enter,
-	
-	inner_scene:scene_status.can_enter,
 }
 
 #判断场景是否可进入，返回true表示可进入
