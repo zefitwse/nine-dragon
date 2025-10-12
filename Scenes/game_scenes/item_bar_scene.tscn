@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://48ahg1ag0keq"]
+[gd_scene load_steps=0 format=3 uid="uid://48ahg1ag0keq"]
 
 [node name="ItemBarScene" type="Node2D"]
 

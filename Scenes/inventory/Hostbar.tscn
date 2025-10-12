@@ -3,27 +3,97 @@
 [ext_resource type="Script" uid="uid://c5tbs5ki1p208" path="res://Script/inventory/host_bar.gd" id="1_gon12"]
 [ext_resource type="Script" uid="uid://budtk7m0csoni" path="res://Script/inventory/slot.gd" id="2_b0s45"]
 
-[node name="HostBar" type="Node2D"]
+[node name="hostbar" type="Node2D"]
 script = ExtResource("1_gon12")
 metadata/_custom_type_script = "uid://c5tbs5ki1p208"
 
-[node name="TextureRect" type="TextureRect" parent="."]
-anchors_preset = -1
-anchor_left = 0.507
-anchor_top = 0.858
-anchor_right = 0.507
-anchor_bottom = 0.858
-offset_left = 503.0
-offset_top = 819.0
-offset_right = 1098.0
-offset_bottom = 889.0
+[node name="container" type="PanelContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -276.5
+offset_top = -27.5
+offset_right = 276.5
+offset_bottom = 27.5
 grow_horizontal = 2
-grow_vertical = 0
-pivot_offset = Vector2(327, 57)
+grow_vertical = 2
+
+[node name="margin" type="MarginContainer" parent="container"]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="hostbar" type="GridContainer" parent="container/margin"]
+layout_mode = 2
+theme_override_constants/h_separation = 28
+columns = 7
+
+[node name="hostbar_slot1" type="Panel" parent="container/margin/hostbar"]
+clip_children = 2
+clip_contents = true
+custom_minimum_size = Vector2(55, 55)
+layout_mode = 2
+script = ExtResource("2_b0s45")
+metadata/_custom_type_script = "uid://budtk7m0csoni"
+
+[node name="hostbar_slot2" type="Panel" parent="container/margin/hostbar"]
+clip_children = 2
+clip_contents = true
+custom_minimum_size = Vector2(55, 55)
+layout_mode = 2
+script = ExtResource("2_b0s45")
+metadata/_custom_type_script = "uid://budtk7m0csoni"
+
+[node name="hostbar_slot3" type="Panel" parent="container/margin/hostbar"]
+clip_children = 2
+clip_contents = true
+custom_minimum_size = Vector2(55, 55)
+layout_mode = 2
+script = ExtResource("2_b0s45")
+metadata/_custom_type_script = "uid://budtk7m0csoni"
+
+[node name="hostbar_slot4" type="Panel" parent="container/margin/hostbar"]
+clip_children = 2
+clip_contents = true
+custom_minimum_size = Vector2(55, 55)
+layout_mode = 2
+script = ExtResource("2_b0s45")
+metadata/_custom_type_script = "uid://budtk7m0csoni"
+
+[node name="hostbar_slot5" type="Panel" parent="container/margin/hostbar"]
+clip_children = 2
+clip_contents = true
+custom_minimum_size = Vector2(55, 55)
+layout_mode = 2
+script = ExtResource("2_b0s45")
+metadata/_custom_type_script = "uid://budtk7m0csoni"
+
+[node name="hostbar_slot6" type="Panel" parent="container/margin/hostbar"]
+clip_children = 2
+clip_contents = true
+custom_minimum_size = Vector2(55, 55)
+layout_mode = 2
+script = ExtResource("2_b0s45")
+metadata/_custom_type_script = "uid://budtk7m0csoni"
+
+[node name="hostbar_slot7" type="Panel" parent="container/margin/hostbar"]
+clip_children = 2
+clip_contents = true
+custom_minimum_size = Vector2(55, 55)
+layout_mode = 2
+script = ExtResource("2_b0s45")
+metadata/_custom_type_script = "uid://budtk7m0csoni"
+
+[node name="bg_color" type="TextureRect" parent="container"]
+layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="ColorRect" type="ColorRect" parent="TextureRect"]
+[node name="ColorRect" type="ColorRect" parent="container/bg_color"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -31,67 +101,3 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.919464, 0.91082, 0.991898, 0.560784)
-
-[node name="hostbar" type="GridContainer" parent="."]
-offset_left = 524.0
-offset_top = 826.0
-offset_right = 1252.0
-offset_bottom = 906.0
-theme_override_constants/h_separation = 28
-columns = 7
-
-[node name="hostbar_slot1" type="Panel" parent="hostbar"]
-clip_children = 2
-clip_contents = true
-custom_minimum_size = Vector2(55, 55)
-layout_mode = 2
-script = ExtResource("2_b0s45")
-metadata/_custom_type_script = "uid://budtk7m0csoni"
-
-[node name="hostbar_slot2" type="Panel" parent="hostbar"]
-clip_children = 2
-clip_contents = true
-custom_minimum_size = Vector2(55, 55)
-layout_mode = 2
-script = ExtResource("2_b0s45")
-metadata/_custom_type_script = "uid://budtk7m0csoni"
-
-[node name="hostbar_slot3" type="Panel" parent="hostbar"]
-clip_children = 2
-clip_contents = true
-custom_minimum_size = Vector2(55, 55)
-layout_mode = 2
-script = ExtResource("2_b0s45")
-metadata/_custom_type_script = "uid://budtk7m0csoni"
-
-[node name="hostbar_slot4" type="Panel" parent="hostbar"]
-clip_children = 2
-clip_contents = true
-custom_minimum_size = Vector2(55, 55)
-layout_mode = 2
-script = ExtResource("2_b0s45")
-metadata/_custom_type_script = "uid://budtk7m0csoni"
-
-[node name="hostbar_slot5" type="Panel" parent="hostbar"]
-clip_children = 2
-clip_contents = true
-custom_minimum_size = Vector2(55, 55)
-layout_mode = 2
-script = ExtResource("2_b0s45")
-metadata/_custom_type_script = "uid://budtk7m0csoni"
-
-[node name="hostbar_slot6" type="Panel" parent="hostbar"]
-clip_children = 2
-clip_contents = true
-custom_minimum_size = Vector2(55, 55)
-layout_mode = 2
-script = ExtResource("2_b0s45")
-metadata/_custom_type_script = "uid://budtk7m0csoni"
-
-[node name="hostbar_slot7" type="Panel" parent="hostbar"]
-clip_children = 2
-clip_contents = true
-custom_minimum_size = Vector2(55, 55)
-layout_mode = 2
-script = ExtResource("2_b0s45")
-metadata/_custom_type_script = "uid://budtk7m0csoni"

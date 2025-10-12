@@ -4119,7 +4119,7 @@ size = Vector2(319.25, 146.063)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_khnh5"]
 size = Vector2(19, 24)
 
-[node name="InnerScene" type="Node2D"]
+[node name="InnerScene3" type="Node2D"]
 position = Vector2(-5, 0)
 
 [node name="PlayeRole" parent="." instance=ExtResource("1_8gjd5")]

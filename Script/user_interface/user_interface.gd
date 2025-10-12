@@ -1,5 +1,5 @@
 class_name UserInterface extends CanvasLayer
-@onready var host_bar = $HostBar
+@onready var host_bar = $hostbar
 @onready var inventory = $Inventory
 var inventory_display_flage = false
 
