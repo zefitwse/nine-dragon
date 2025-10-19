@@ -4,8 +4,8 @@ class_name UserInterface extends CanvasLayer
 var inventory_display_flage = false
 
 
-func _ready() -> void:
-	host_bar.visible = true
+#func _ready() -> void:
+	#host_bar.visible = true
 # TBC: keypress handling
 #func _unhandled_input(event: InputEvent) -> void:
 	#if event is InputEventKey:
