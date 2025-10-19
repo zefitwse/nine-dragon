@@ -1,5 +1,5 @@
 class_name HostBar extends Node2D
-@onready var host_bar_slots = $container/margin/hostbar
+@onready var host_bar_slots = $background/HostBar
 
 var selected_slot:Slot
 func _ready() -> void:

@@ -1,15 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://b1clwqkuewt0o"]
+[gd_scene load_steps=3 format=3 uid="uid://b1clwqkuewt0o"]
 
+[ext_resource type="Script" uid="uid://c5tbs5ki1p208" path="res://Script/inventory/host_bar.gd" id="1_hpqiv"]
 [ext_resource type="Script" uid="uid://budtk7m0csoni" path="res://Script/inventory/slot.gd" id="2_yxpo1"]
 
 [node name="hostBar_scene" type="Node2D"]
-position = Vector2(1, 4)
+script = ExtResource("1_hpqiv")
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="background" type="TextureRect" parent="."]
 anchors_preset = -1
 anchor_left = 0.507
 anchor_top = 0.858
-anchor_right = 0.507
+anchor_right = 0.805
 anchor_bottom = 0.858
 offset_left = 503.0
 offset_top = 819.0
@@ -21,9 +22,8 @@ pivot_offset = Vector2(327, 57)
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="ColorRect" type="ColorRect" parent="TextureRect"]
-layout_mode = 1
-anchors_preset = 15
+[node name="background_color" type="ColorRect" parent="background"]
+layout_mode = 2
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = -1.0
@@ -32,58 +32,58 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.450648, 0.450648, 0.450648, 0.439216)
 
-[node name="HostBar" type="GridContainer" parent="TextureRect/ColorRect"]
+[node name="HostBar" type="GridContainer" parent="background"]
 layout_mode = 1
 anchors_preset = 13
 anchor_left = 0.5
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -271.5
+offset_left = -272.5
 offset_top = 8.0
-offset_right = 281.5
+offset_right = 280.5
 offset_bottom = -7.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/h_separation = 28
 columns = 7
 
-[node name="hostbar_slot1" type="Panel" parent="TextureRect/ColorRect/HostBar"]
+[node name="hostbar_slot1" type="Panel" parent="background/HostBar"]
 custom_minimum_size = Vector2(55, 55)
 layout_mode = 2
 script = ExtResource("2_yxpo1")
 metadata/_custom_type_script = "uid://budtk7m0csoni"
 
-[node name="hostbar_slot2" type="Panel" parent="TextureRect/ColorRect/HostBar"]
+[node name="hostbar_slot2" type="Panel" parent="background/HostBar"]
 custom_minimum_size = Vector2(55, 55)
 layout_mode = 2
 script = ExtResource("2_yxpo1")
 metadata/_custom_type_script = "uid://budtk7m0csoni"
 
-[node name="hostbar_slot3" type="Panel" parent="TextureRect/ColorRect/HostBar"]
+[node name="hostbar_slot3" type="Panel" parent="background/HostBar"]
 custom_minimum_size = Vector2(55, 55)
 layout_mode = 2
 script = ExtResource("2_yxpo1")
 metadata/_custom_type_script = "uid://budtk7m0csoni"
 
-[node name="hostbar_slot4" type="Panel" parent="TextureRect/ColorRect/HostBar"]
+[node name="hostbar_slot4" type="Panel" parent="background/HostBar"]
 custom_minimum_size = Vector2(55, 55)
 layout_mode = 2
 script = ExtResource("2_yxpo1")
 metadata/_custom_type_script = "uid://budtk7m0csoni"
 
-[node name="hostbar_slot5" type="Panel" parent="TextureRect/ColorRect/HostBar"]
+[node name="hostbar_slot5" type="Panel" parent="background/HostBar"]
 custom_minimum_size = Vector2(55, 55)
 layout_mode = 2
 script = ExtResource("2_yxpo1")
 metadata/_custom_type_script = "uid://budtk7m0csoni"
 
-[node name="hostbar_slot6" type="Panel" parent="TextureRect/ColorRect/HostBar"]
+[node name="hostbar_slot6" type="Panel" parent="background/HostBar"]
 custom_minimum_size = Vector2(55, 55)
 layout_mode = 2
 script = ExtResource("2_yxpo1")
 metadata/_custom_type_script = "uid://budtk7m0csoni"
 
-[node name="hostbar_slot7" type="Panel" parent="TextureRect/ColorRect/HostBar"]
+[node name="hostbar_slot7" type="Panel" parent="background/HostBar"]
 custom_minimum_size = Vector2(55, 55)
 layout_mode = 2
 script = ExtResource("2_yxpo1")
