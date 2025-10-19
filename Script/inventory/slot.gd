@@ -13,7 +13,9 @@ func _ready() -> void:
 	empty_style_box = StyleBoxFlat.new()
 	default_style_box = StyleBoxFlat.new()
 	highlight_box = StyleBoxFlat.new()
-	highlight_box.set_bg_color(Color(0,229,238,1))
+	default_style_box.set_bg_color(Color(0,0,0,0.8))
+	empty_style_box.set_bg_color(Color(0,0,0,0.8))
+	highlight_box.set_bg_color(Color(117, 183, 222, 0.839))
 
 	#if randi() % 2 == 0:
 		#item = item_class.instantiate()
